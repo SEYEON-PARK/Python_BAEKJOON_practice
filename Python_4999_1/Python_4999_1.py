@@ -12,8 +12,8 @@
 재환이가 그 병원에 가야하면 "go"를, 아니면 "no"를 출력한다.
 '''
 
-j=input()
-d=input()
+j=input() // 문자열 입력받기
+d=input() // 문자열 입력받기
 
 if(len(j)>=len(d)):
     print("go")
