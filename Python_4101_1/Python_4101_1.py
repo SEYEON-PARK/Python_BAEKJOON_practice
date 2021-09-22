@@ -7,4 +7,12 @@
 각 테스트 케이스마다, 첫 번째 수가 두 번째 수보다 크면 Yes를, 아니면 No를 한 줄에 하나씩 출력한다.
 '''
 
-
+while True:
+    a, b=map(int, input().split())
+    
+    if(a==0 and b==0):
+        break
+    if(a>b):
+        print('Yes')
+    else:
+        print("No")
