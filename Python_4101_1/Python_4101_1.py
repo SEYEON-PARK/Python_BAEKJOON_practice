@@ -12,7 +12,7 @@ while True: # 무한 반복
     
     if(a==0 and b==0): # 만약, a가 0이고 b가 0이면
         break # 가장 가까운 반복문을 빠져나가기
-    if(a>b):
-        print('Yes')
-    else:
-        print("No")
+    if(a>b): # 만약, a가 b보다 크다면
+        print('Yes') # 'Yes'를 출력하기
+    else: # a가 b보다 크지 않다면
+        print("No") # "No"를 출력하기
