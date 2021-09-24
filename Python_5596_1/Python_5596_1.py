@@ -9,3 +9,14 @@
 
 문제에서 요구하는 정답을 출력한다.
 """
+
+a1, a2, a3, a4=map(int, input().split())
+b1, b2, b3, b4=map(int, input().split())
+
+S=a1+a2+a3+a4
+T=b1+b2+b3+b4
+
+if S>=T:
+    print(S)
+else:
+    print(T)
