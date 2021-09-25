@@ -10,7 +10,7 @@
 문제에서 요구하는 정답을 출력한다.
 """
 
-a1, a2, a3, a4=map(int, input().split())
+a1, a2, a3, a4=map(int, input().split()) # 사용자로부터 네 개의 정수 입력받기
 b1, b2, b3, b4=map(int, input().split())
 
 S=a1+a2+a3+a4
