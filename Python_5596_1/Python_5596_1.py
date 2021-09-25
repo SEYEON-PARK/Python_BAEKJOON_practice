@@ -11,12 +11,12 @@
 """
 
 a1, a2, a3, a4=map(int, input().split()) # 사용자로부터 네 개의 정수 입력받기
-b1, b2, b3, b4=map(int, input().split())
+b1, b2, b3, b4=map(int, input().split()) # 사용자로부터 네 개의 정수 입력받기
 
 S=a1+a2+a3+a4 # S에 a1+a2+a3+a4를 대입하기
-T=b1+b2+b3+b4
+T=b1+b2+b3+b4 # T에 b1+b2+b3+b4를 대입하기
 
-if S>=T:
-    print(S)
-else:
-    print(T)
+if S>=T: # 만약, S가 T보다 크거나 같다면
+    print(S) # S 출력하기
+else: # S가 T보다 크거나 같지 않다면(작다면)
+    print(T) # T 출력하기
