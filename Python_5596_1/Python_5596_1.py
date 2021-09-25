@@ -13,7 +13,7 @@
 a1, a2, a3, a4=map(int, input().split()) # 사용자로부터 네 개의 정수 입력받기
 b1, b2, b3, b4=map(int, input().split())
 
-S=a1+a2+a3+a4
+S=a1+a2+a3+a4 # S에 a1+a2+a3+a4를 대입하기
 T=b1+b2+b3+b4
 
 if S>=T:
