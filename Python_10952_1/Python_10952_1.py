@@ -12,4 +12,4 @@ while True: # 무한 반복
     a, b=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
     if(a==0 and b==0): # 만약, a가 0이고 b도 0이면
         break # 가장 가까운 반복문을 빠져나간다.
-    print(a+b)
+    print(a+b) # 결과 출력하기
