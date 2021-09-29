@@ -8,7 +8,7 @@
 각 테스트 케이스마다 A+B를 출력한다.
 '''
 
-while True:
+while True: # 무한 반복
     a, b=map(int, input().split())
     if(a==0 and b==0):
         break
