@@ -13,3 +13,5 @@ for i in range(1, a+1):
     sum+=i
     
 print(sum)
+
+Python언어 BAEKJOON 8393번 문제 풀기!(1)
