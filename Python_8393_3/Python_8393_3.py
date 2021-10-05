@@ -12,7 +12,7 @@ def s(n): # 함수 s(n) 정의
         sum+=i # sum에 sum+i 대입하기
     return sum # sum을 반환하기
 
-a=int(input())
-result=s(a)
+a=int(input()) # 사용자로부터 정수 입력받기
+result=s(a) # result에 함수 s(a)에서 반환하는 값 넣기
     
-print(result)
+print(result) # 결과 출력하기
