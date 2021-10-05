@@ -6,3 +6,13 @@ n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성�
 1부터 n까지 합을 출력한다.
 """
 
+def s(n):
+    sum=0
+    for i in range(n, 0, -1):
+        sum+=i
+    return sum
+
+a=int(input())
+result=s(a)
+    
+print(result)
