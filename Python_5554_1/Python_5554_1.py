@@ -15,11 +15,11 @@
 '''
 
 a=int(input()) # 사용자로부터 정수 입력받기
-b=int(input())
-c=int(input())
-d=int(input())
+b=int(input()) # 사용자로부터 정수 입력받기
+c=int(input()) # 사용자로부터 정수 입력받기
+d=int(input()) # 사용자로부터 정수 입력받기
 
 sum=a+b+c+d # sum에 a+b+c+d 대입하기
 
-print(sum//60)
-print(sum%60)
+print(sum//60) # 분 출력하기
+print(sum%60) # 초 출력하기
