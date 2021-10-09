@@ -14,7 +14,7 @@
 총 이동시간 x 분 y 초를 출력한다. 첫 번째 줄에 x를, 두 번째 줄에 y를 출력한다.
 '''
 
-a=int(input())
+a=int(input()) # 사용자로부터 정수 입력받기
 b=int(input())
 c=int(input())
 d=int(input())
