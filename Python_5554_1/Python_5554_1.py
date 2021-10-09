@@ -19,7 +19,7 @@ b=int(input())
 c=int(input())
 d=int(input())
 
-sum=a+b+c+d
+sum=a+b+c+d # sum에 a+b+c+d 대입하기
 
 print(sum//60)
 print(sum%60)
