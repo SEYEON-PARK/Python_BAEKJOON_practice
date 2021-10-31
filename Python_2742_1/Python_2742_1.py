@@ -7,5 +7,5 @@
 '''
 
 a=int(input()) # 사용자로부터 정수 입력받기
-for i in range(a, 0, -1):
-    print(i)
+for i in range(a, 0, -1): # i에 a부터 0이 되기 전까지 1씩 감소시켜서 대입하며 반복
+    print(i) # 결과 출력하기
