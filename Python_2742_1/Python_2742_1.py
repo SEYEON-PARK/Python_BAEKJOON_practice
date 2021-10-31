@@ -6,6 +6,6 @@
 첫째 줄부터 N번째 줄 까지 차례대로 출력한다.
 '''
 
-a=int(input())
+a=int(input()) // 사용자로부터 정수 입력받기
 for i in range(a, 0, -1):
     print(i)
