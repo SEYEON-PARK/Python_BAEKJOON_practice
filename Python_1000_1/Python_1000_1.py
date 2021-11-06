@@ -6,6 +6,6 @@
 첫째 줄에 A+B를 출력한다.
 '''
 
-A, B=map(int, input().split())
+A, B=map(int, input().split()) # 사용자로부터 정수 입력받기
 
 print(A+B)
