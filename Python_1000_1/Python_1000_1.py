@@ -8,4 +8,4 @@
 
 A, B=map(int, input().split()) # 사용자로부터 정수 입력받기
 
-print(A+B)
+print(A+B) #
