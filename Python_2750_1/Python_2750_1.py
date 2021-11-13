@@ -11,14 +11,14 @@ N=int(input()) # 사용자로부터 정수 입력받기
 a=list() # 리스트 a 생성
 b=list() # 리스트 b 생성
 
-for i in range(N): # i에 0부터 N이 되기 전까지(N-1까지) 1씩 증가해서 대입하며 반복 
+for i in range(N): # 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값을 i에 대입하며 반복 
     a.append(int(input())) # 입력받은 정수를 리스트 a에 추가하기
 
 
-for i in range(N):
+for i in range(N): # 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값을 i에 대입하며 반복 
     m=min(a) # m에 리스트 a 중 가장 작은 수를 대입하기
     b.append(m) # m을 리스트 b에 추가하기
-    a[a.index(m)]=1001 
+    a[a.index(m)]=1001 # 리스트 a 안에 있는 수 중에 m과 같은 수를 -1001로 바꾸기
     
-for i in range(N):
-    print(b[i])
+for i in range(N): # 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값을 i에 대입하며 반복 
+    print(b[i]) # 결과 출력하기
