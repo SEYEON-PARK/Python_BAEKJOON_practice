@@ -10,10 +10,10 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 N=int(input()) # 사용자로부터 정수 입력받기
 a=list() # 리스트 a 생성
 
-for i in range(N): # i에 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값을 대입하며 반복
-    a.append(int(input())) 
+for i in range(N): # 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값을 i에 대입하며 반복
+    a.append(int(input()))  # 입력받은 정수를 리스트 a에 추가
 
-a.sort()
+a.sort() # a를 오름차순 정렬하기
 
-for i in range(N):
-    print(a[i])
+for i in range(N): # 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값을 i에 대입하며 반복
+    print(a[i]) # 결과 출력하기
