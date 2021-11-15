@@ -7,11 +7,11 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 첫째 줄부터 N개의 줄에 오름차순으로 정렬한 결과를 한 줄에 하나씩 출력한다.
 """
 
-N=int(input()) // 사용자로부터 정수 입력받기
-a=list()
+N=int(input()) # 사용자로부터 정수 입력받기
+a=list() # 리스트 a 생성
 
-for i in range(N):
-    a.append(int(input()))
+for i in range(N): # i에 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값을 대입하며 반복
+    a.append(int(input())) 
 
 a.sort()
 
