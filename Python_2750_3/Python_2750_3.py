@@ -1,3 +1,5 @@
+
+
 N=int(input())
 a=list()
 
