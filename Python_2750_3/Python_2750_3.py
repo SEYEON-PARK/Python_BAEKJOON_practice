@@ -13,7 +13,7 @@ a=list() # 리스트 a 생성
 for i in range(N): # 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값을 i에 대입하며 반복
     a.append(int(input())) # 사용자로부터 정수를 입력받아 리스트 a에 저장
 
-b=sorted(a) 
+b=sorted(a) # b에 리스트 a를 오름차순하여 정렬한 값을 대입
 
 for i in range(N):
     print(b[i])
