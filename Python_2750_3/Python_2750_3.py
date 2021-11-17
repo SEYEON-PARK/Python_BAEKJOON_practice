@@ -15,5 +15,5 @@ for i in range(N): # 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값
 
 b=sorted(a) # b에 리스트 a를 오름차순하여 정렬한 값을 대입
 
-for i in range(N):
-    print(b[i])
+for i in range(N): # 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값을 i에 대입하며 반복
+    print(b[i]) # 결과 출력하기
