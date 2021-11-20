@@ -7,18 +7,3 @@ N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프�
 
 첫째 줄에 주어진 정수 N개의 최솟값과 최댓값을 공백으로 구분해 출력한다.
 '''
-
-a=int(input())
-
-num=list(map(int, input().split()))
-
-up=num[0]
-down=num[0]
-
-for i in range(len(num)):
-    if num[i]>up:
-        up=num[i]
-    if num[i]<down:
-        down=num[i]
-        
-print(down, up)
