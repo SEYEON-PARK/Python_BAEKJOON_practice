@@ -12,9 +12,9 @@ n=int(input()) # 사용자로부터 정수 입력받기
 a=list(map(int, input().split())) # 사용자로부터 정수들을 입력받아서 공백을 기준으로 나눠 리스트 a에 저장하기
 a.sort() # 리스트 a를 오름차순 정렬하기
 
-if(len(a)==1):
-    result=a[0]*2
+if(len(a)==1): # 만약, 리스트 a의 길이가 1이라면
+    result=a[0]*2 # result에 a[0]*2 값을 대입하기
 
-result=a[0]*a[-1]
+result=a[0]*a[-1] # result에 a[0]*a[-1] 값 대입하기
 
-print(result)
+print(result) # 결과 출력하기
