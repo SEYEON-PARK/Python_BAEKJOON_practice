@@ -8,7 +8,7 @@
 첫째 줄에 N을 출력한다. N은 항상 32비트 부호있는 정수로 표현할 수 있다.
 '''
 
-n=int(input())
+n=int(input()) # 사용자로부터 정수 입력받기
 a=list(map(int, input().split()))
 a.sort()
 
