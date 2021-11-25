@@ -7,8 +7,8 @@
 첫째 줄에 N을 출력한다. N은 항상 32비트 부호있는 정수로 표현할 수 있다.
 """
 
-n=int(input())
-a=list(map(int, input().split()))
+n=int(input()) # 사용자로부터 정수 입력받기
+a=list(map(int, input().split())) # 사용자로부터 정수들을 입력받아서 공백을 기준으로 나눠 리스트 a에 저장하기
 a.sort()
 
 result=a[0]*a[-1]
