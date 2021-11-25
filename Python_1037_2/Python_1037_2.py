@@ -13,4 +13,4 @@ a.sort() # 리스트 a를 오름차순 정렬하기
 
 result=a[0]*a[-1] # result에 a[0]*a[-1] 값 대입하기
 
-print(result)
+print(result) # 결과 출력하기
