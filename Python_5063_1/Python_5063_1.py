@@ -16,9 +16,9 @@ T=int(input()) # 사용자로부터 정수 입력받기
 for i in range(T): # i에 0부터 T가 되기 전까지 1씩 증가한 값을 대입하며 반복
     r, e, c=map(int, input().split()) # 사용자로부터 세 개의 정수 입력받기
     a=e-r; # a에 e-r 대입하기
-    if(a>c): 
-        print("advertise")
-    elif(a<c):
-        print("do not advertise")
-    else:
-        print("does not matter")
+    if(a>c): # 만약, a가 c보다 크다면
+        print("advertise") # "advertise" 출력하기
+    elif(a<c): # 만약, a가 c보다 크지 않고 a가 c보다 작다면
+        print("do not advertise") # "do not advertise" 출력하기
+    else: # a가 c보다 크지도 않고 작지도 않다면(같다면)
+        print("does not matter") # "does not matter" 출력하기
