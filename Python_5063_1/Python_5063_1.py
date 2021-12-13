@@ -11,12 +11,12 @@ r은 광고를 하지 않았을 때 수익, e는 광고를 했을 때의 수익,
 각 테스트 케이스에 대해서, 광고를 해야 하면 "advertise", 하지 않아야 하면 "do not advertise", 광고를 해도 수익이 차이가 없다면 "does not matter"를 출력한다.
 """
 
-T=int(input()) // 사용자로부터 정수 입력받기
+T=int(input()) # 사용자로부터 정수 입력받기
 
-for i in range(T):
-    r, e, c=map(int, input().split())
-    a=e-r;
-    if(a>c):
+for i in range(T): # i에 0부터 T가 되기 전까지 1씩 증가한 값을 대입하며 반복
+    r, e, c=map(int, input().split()) # 사용자로부터 세 개의 정수 입력받기
+    a=e-r; # a에 e-r 대입하기
+    if(a>c): 
         print("advertise")
     elif(a<c):
         print("do not advertise")
