@@ -10,7 +10,7 @@ N과 M이 주어졌을 때, M학년이 뉴비인지 올드비인지 TLE인지 �
 M학년이 뉴비라면 NEWBIE!를, 올드비라면 OLDBIE!를 TLE이라면 TLE!을 출력합니다.
 '''
 
-N, M=map(int, input().split()) // 사용자로부터 두 개의 정수 입력받기
+N, M=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
 
 if(M==1 or M==2):
     print("NEWBIE!")
