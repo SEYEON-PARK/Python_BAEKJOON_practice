@@ -12,9 +12,9 @@ M학년이 뉴비라면 NEWBIE!를, 올드비라면 OLDBIE!를 TLE이라면 TLE!
 
 N, M=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
 
-if(M==1 or M==2):
-    print("NEWBIE!")
-elif(M<=N):
-    print("OLDBIE!")
-else:
-    print("TLE!")
+if(M==1 or M==2): # 만약, M이 1이거나 2라면
+    print("NEWBIE!") # "NEWBIE!" 출력하기
+elif(M<=N): # 1도 아니고 2도 아닌 M이 N보다 작거나 같다면
+    print("OLDBIE!") # "OLDBIE!" 출력하기
+else: # 1도 아니고 2도 아닌 M이 N보다 크다면
+    print("TLE!") # "TLE!" 출력하기
