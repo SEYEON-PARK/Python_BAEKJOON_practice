@@ -17,8 +17,8 @@ s2=list() # 리스트 s2 만들기
 score=list(map(int, input().split())) # 리스트 score에 사용자가 입력한 정수들 저장하기
 
 big=max(score) # 리스트 score에 저장된 정수들 중 가장 큰 정수를 big에 저장하기
-for i in range(N):
-    s2.append(score[i]/big*100)
+for i in range(N): # i에 0부터 N이 되기 전까지(N-1까지) 증가한 값을 대입하며 반복
+    s2.append(score[i]/big*100) # 리스트 s2에 (score[i]/big*100) 값 추가하기 
 
 s=sum(s2)
 result=s/len(s2)
