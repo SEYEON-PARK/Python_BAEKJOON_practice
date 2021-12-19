@@ -10,3 +10,17 @@
 
 첫째 줄에 새로운 평균을 출력한다. 실제 정답과 출력값의 절대오차 또는 상대오차가 10의 -2 제곱 이하이면 정답이다.
 """
+
+N=int(input())
+s2=list()
+
+score=list(map(int, input().split()))
+
+big=max(score)
+for i in range(N):
+    s2.append(score[i]/big*100)
+
+s=sum(s2)
+result=s/len(s2)
+
+print(result)
