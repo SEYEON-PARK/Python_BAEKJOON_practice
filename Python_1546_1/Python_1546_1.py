@@ -11,12 +11,12 @@
 첫째 줄에 새로운 평균을 출력한다. 실제 정답과 출력값의 절대오차 또는 상대오차가 10의 -2 제곱 이하이면 정답이다.
 """
 
-N=int(input())
-s2=list()
+N=int(input()) # 사용자로부터 정수 입력받기
+s2=list() # 리스트 s2 만들기 
 
-score=list(map(int, input().split()))
+score=list(map(int, input().split())) # 리스트 score에 사용자가 입력한 정수들 저장하기
 
-big=max(score)
+big=max(score) # 리스트 score에 저장된 정수들 중 가장 큰 정수를 big에 저장하기
 for i in range(N):
     s2.append(score[i]/big*100)
 
