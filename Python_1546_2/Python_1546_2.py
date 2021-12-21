@@ -21,7 +21,7 @@ big=max(score) # 리스트 score에서 가장 큰 값을 big에 저장
 for i in range(N): # 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값을 i에 대입하며 반복
     s2.append(score[i]/big*100) # score[i]/big*100 값을 리스트 s2에 추가
 
-s=sum(s2)
-result=s/len(s2)
+s=sum(s2) # 리스트 s2의 합을 s에 저장
+result=s/len(s2) # result에 s/len(s2) 저장
 
-print(result)
+print(result) # result 출력하기
