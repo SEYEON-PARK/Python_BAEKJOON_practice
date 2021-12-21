@@ -15,11 +15,11 @@ N=int(input()) # 사용자로부터 정수 입력받기
 score=list() # 리스트 score 생성
 s2=list() # 리스트 s2 생성
 
-score.extend(map(int, input().split()))
+score.extend(map(int, input().split())) # map()으로 입력받은 값들을 리스트 score에 저장
 
-big=max(score)
-for i in range(N):
-    s2.append(score[i]/big*100)
+big=max(score) # 리스트 score에서 가장 큰 값을 big에 저장
+for i in range(N): # 0부터 N이 되기 전까지(N-1까지) 1씩 증가한 값을 i에 대입하며 반복
+    s2.append(score[i]/big*100) # score[i]/big*100 값을 리스트 s2에 추가
 
 s=sum(s2)
 result=s/len(s2)
