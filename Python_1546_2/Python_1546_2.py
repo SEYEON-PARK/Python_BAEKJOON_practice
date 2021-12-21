@@ -11,9 +11,9 @@
 첫째 줄에 새로운 평균을 출력한다. 실제 정답과 출력값의 절대오차 또는 상대오차가 10의 -2 제곱 이하이면 정답이다.
 '''
 
-N=int(input())
-score=list()
-s2=list()
+N=int(input()) # 사용자로부터 정수 입력받기
+score=list() # 리스트 score 생성
+s2=list() # 리스트 s2 생성
 
 score.extend(map(int, input().split()))
 
