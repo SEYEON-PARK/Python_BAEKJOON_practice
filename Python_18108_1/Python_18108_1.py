@@ -9,5 +9,5 @@ ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 �
 불기 연도를 서기 연도로 변환한 결과를 출력한다.
 """
 
-y=int(input())
+y=int(input()) #
 print(y-543)
