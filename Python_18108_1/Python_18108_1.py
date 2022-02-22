@@ -10,4 +10,4 @@ ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 �
 """
 
 y=int(input()) # 사용자로부터 정수 입력받기
-print(y-543)
+print(y-543) # 결과(불기 연도를 서기 연도로 변환한 수) 출력하기
