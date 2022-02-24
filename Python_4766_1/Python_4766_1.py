@@ -10,7 +10,7 @@
 '''
 
 first=float(input()) # 사용자로부터 실수 입력받기
-second=float(input())
+second=float(input()) // 
 
 while(second!=999):
     print("%.2f" %(second-first))
