@@ -9,7 +9,7 @@
 입력으로 주어진 각 온도와 이전 온도와의 차이를 출력한다. 첫 번째 측정할 온도는 이전 온도가 없으니 출력할 필요가 없다. 차이는 항상 소수점 둘째자리까지 출력한다.
 '''
 
-first=float(input())
+first=float(input()) # 사용자로부터 실수 입력받기
 second=float(input())
 
 while(second!=999):
