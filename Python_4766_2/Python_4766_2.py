@@ -12,7 +12,7 @@
 first=float(input()) # 사용자로부터 실수 입력받기
 second=float(input())
 
-while(second!=999):
-    print("%0.2f" %(second-first))
+while(second!=999): # second의 값이 999가 아니라면 무한 반복
+    print("%0.2f" %(second-first)) 
     first=second
     second=float(input())
