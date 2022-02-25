@@ -9,10 +9,10 @@
 입력으로 주어진 각 온도와 이전 온도와의 차이를 출력한다. 첫 번째 측정할 온도는 이전 온도가 없으니 출력할 필요가 없다. 차이는 항상 소수점 둘째자리까지 출력한다.
 '''
 
-first=float(input()) # 사용자로부터 실수 입력받기
-second=float(input())
+first=float(input()) # 사용자로부터 실수(동혁이가 측정한 혼합물의 온도) 입력받기
+second=float(input()) # 사용자로부터 실수(동혁이가 측정한 혼합물의 온도) 입력받기
 
 while(second!=999): # second의 값이 999가 아니라면 무한 반복
-    print("%0.2f" %(second-first)) 
-    first=second
-    second=float(input())
+    print("%0.2f" %(second-first)) # 결과(입력으로 주어진 각 온도와 이전 온도와의 차이) 출력하기
+    first=second # first에 second의 값 대입하기
+    second=float(input()) # 사용자로부터 실수(동혁이가 측정한 혼합물의 온도) 입력받기
