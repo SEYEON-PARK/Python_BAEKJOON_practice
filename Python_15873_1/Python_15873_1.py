@@ -5,3 +5,32 @@
 
 첫 번째 줄에 A+B의 값을 출력한다.
 '''
+
+n=int(input())
+
+if len(str(n)) >= 3:
+    if(len(str(n))==4):
+        a=n
+        b=n
+        a%=100
+        b//=100
+        print(a+b)
+    elif(n//10==10):
+        a=n
+        b=n
+        a%=100
+        b//=10
+        print(a+b)
+    else:
+        a=n
+        b=n
+        a%=100
+        b//=100
+        print(a+b)
+    
+else:
+    a=n
+    b=n
+    a%=10
+    b//=10
+    print(a+b)
