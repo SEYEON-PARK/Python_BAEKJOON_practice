@@ -6,9 +6,9 @@
 첫 번째 줄에 A+B의 값을 출력한다.
 """
 
-n=int(input())
-a=n
-b=n
+n=int(input()) # 사용자로부터 정수 입력받기
+a=n # a에 n의 값 대입하기
+b=n # b에 n의 값 대입하기
 
 if len(str(n)) >= 3:
     if(len(str(n))==4):
