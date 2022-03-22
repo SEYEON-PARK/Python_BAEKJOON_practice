@@ -6,8 +6,8 @@
 
  	             내린 사람 수	탄 사람 수
 1번역(출발역)	     0	         32
-2번역              	3	          13
-3번역	             28	          25
+2번역             	3	          13
+3번역	            28	          25
 4번역(종착역)      39	          0
 
 예를 들어, 위와 같은 경우를 살펴보자. 
@@ -25,3 +25,16 @@
 
 출력 : 첫째 줄에 최대 사람 수를 출력한다.  
 '''
+
+a1, a2=map(int, input().split())
+b1, b2=map(int, input().split())
+c1, c2=map(int, input().split())
+d1, d2=map(int, input().split())
+
+b=b2-b1
+c=c2-c1
+
+if b+c>b:
+    print(a2+b+c)
+else:
+    print(a2+b)
