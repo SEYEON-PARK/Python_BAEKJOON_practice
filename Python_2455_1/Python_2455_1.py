@@ -26,10 +26,10 @@
 출력 : 첫째 줄에 최대 사람 수를 출력한다.  
 '''
 
-a1, a2=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
-b1, b2=map(int, input().split())
-c1, c2=map(int, input().split())
-d1, d2=map(int, input().split())
+a1, a2=map(int, input().split()) # 사용자로부터 두 개의 정수(1번역에서 내린 사람 수, 탄 사람 수) 입력받기
+b1, b2=map(int, input().split()) # 사용자로부터 두 개의 정수(2번역에서 내린 사람 수, 탄 사람 수) 입력받기
+c1, c2=map(int, input().split()) # 사용자로부터 두 개의 정수(3번역에서 내린 사람 수, 탄 사람 수) 입력받기
+d1, d2=map(int, input().split()) # 사용자로부터 두 개의 정수(4번역에서 내린 사람 수, 탄 사람 수) 입력받기
 
 b=b2-b1 # b에 b2-b1 값 대입하기
 c=c2-c1 # c에 c2-c1 값 대입하기
