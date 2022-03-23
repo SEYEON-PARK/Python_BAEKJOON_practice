@@ -26,7 +26,7 @@
 출력 : 첫째 줄에 최대 사람 수를 출력한다.  
 '''
 
-a1, a2=map(int, input().split())
+a1, a2=map(int, input().split()) // 사용자로부터 두 개의 정수 입력받기
 b1, b2=map(int, input().split())
 c1, c2=map(int, input().split())
 d1, d2=map(int, input().split())
