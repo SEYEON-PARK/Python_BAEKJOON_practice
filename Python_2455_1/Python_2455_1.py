@@ -26,15 +26,15 @@
 출력 : 첫째 줄에 최대 사람 수를 출력한다.  
 '''
 
-a1, a2=map(int, input().split()) // 사용자로부터 두 개의 정수 입력받기
+a1, a2=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
 b1, b2=map(int, input().split())
 c1, c2=map(int, input().split())
 d1, d2=map(int, input().split())
 
-b=b2-b1
-c=c2-c1
+b=b2-b1 # b에 b2-b1 값 대입하기
+c=c2-c1 # c에 c2-c1 값 대입하기
 
-if b+c>b:
-    print(a2+b+c)
-else:
-    print(a2+b)
+if b+c>b: # 만약, b+c가 b보다 크다면
+    print(a2+b+c) # a2+b+c의 값 출력하기
+else: # b+c가 b보다 작거나 같다면
+    print(a2+b) # a2+b의 값 출력하기
