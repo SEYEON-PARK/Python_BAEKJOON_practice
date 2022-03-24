@@ -25,3 +25,16 @@
 
 출력 : 첫째 줄에 최대 사람 수를 출력한다.  
 """
+
+a1, a2=map(int, input().split())
+b1, b2=map(int, input().split())
+c1, c2=map(int, input().split())
+d1, d2=map(int, input().split())
+
+b=b2-b1
+c=c2-c1
+
+if c>0:
+    print(a2+b+c)
+else:
+    print(a2+b)
