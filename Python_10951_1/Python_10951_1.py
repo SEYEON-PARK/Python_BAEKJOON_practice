@@ -7,7 +7,7 @@
 각 테스트 케이스마다 A+B를 출력한다.
 '''
 
-while(True):
+while(True): # 무한 반복
     try:
         A, B=map(int, input().split())
         print(A+B)
