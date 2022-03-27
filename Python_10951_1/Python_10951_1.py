@@ -10,6 +10,6 @@
 while(True): # 무한 반복
     try: # 일단 실행
         A, B=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
-        print(A+B)
-    except:
-        break
+        print(A+B) # A+B 값 출력하기
+    except: # 만약, 예외가 발생하면(더 이상 입력이 없으면)
+        break # 반복문 빠져 나가기
