@@ -8,8 +8,8 @@
 '''
 
 while(True): # 무한 반복
-    try:
-        A, B=map(int, input().split())
+    try: # 일단 실행
+        A, B=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
         print(A+B)
     except:
         break
