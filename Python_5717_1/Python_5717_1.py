@@ -7,8 +7,8 @@
 각 테스트 케이스마다 상근이의 친구의 수를 출력한다.
 '''
 
-while True:
-    M, F=map(int, input().split())
+while True: # 무한 반복
+    M, F=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
     if M==0 and F==0:
        break
     print(M+F)
