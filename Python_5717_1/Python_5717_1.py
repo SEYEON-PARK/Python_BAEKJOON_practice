@@ -9,6 +9,6 @@
 
 while True: # 무한 반복
     M, F=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
-    if M==0 and F==0:
-       break
+    if M==0 and F==0: # 만약, M이 0이고 F도 0이라면
+       break # 가장 가까운 반복문 빠져 나가기
     print(M+F)
