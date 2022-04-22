@@ -16,8 +16,8 @@ s=input() # 사용자로부터 문자열 입력받기
 r="" # 문자열 r 생성
 
 for i in range(len(s)): # i에 0부터 (문자열 s의 길이)-1까지 1씩 증가하는 값을 대입하며 반복
-    if s[i] in "CAMBRIDGE": # 만약, s[i]가 
-        continue
-    r+=s[i]
+    if s[i] in "CAMBRIDGE": # 만약, s[i]가 "CAMBRIDGE" 안에 있다면
+        continue # 반복문을 위에서부터 계속 이어서 읽기
+    r+=s[i] # r에 r+s[i] 값 대입하기
 
-print(r)
+print(r) # 결과 출력하기
