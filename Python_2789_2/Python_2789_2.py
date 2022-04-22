@@ -15,8 +15,8 @@
 s=input() # 사용자로부터 문자열 입력받기
 r="" # 문자열 r 생성
 
-for i in range(len(s)):
-    if s[i] in "CAMBRIDGE":
+for i in range(len(s)): # i에 0부터 (문자열 s의 길이)-1까지 1씩 증가하는 값을 대입하며 반복
+    if s[i] in "CAMBRIDGE": # 만약, s[i]가 
         continue
     r+=s[i]
 
