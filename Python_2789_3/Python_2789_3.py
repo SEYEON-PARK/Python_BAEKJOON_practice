@@ -12,10 +12,10 @@
 입력으로 주어진 단어를 정부가 검열을 하면 어떻게 변하는지를 출력한다. 즉, 단어에서 CAMBRIDGE에 포함된 알파벳을 모두 지운 뒤 출력한다. 항상 정답의 길이는 0보다 크다.
 '''
 
-s=input()
-r=''
+s=input() # 사용자로부터 문자열 입력받기
+r='' # 문자열 r 생성
 
-for i in range(len(s)):
+for i in range(len(s)): # 0부터 (문자열 s의 길이)-1까지 1씩 증가한 값을 i에 대입하며 반복
     if s[i] in "CAMBRIDGE":
         continue
     r+=s[i]
