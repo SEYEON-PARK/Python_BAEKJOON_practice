@@ -7,8 +7,8 @@
 각 테스트 케이스마다 A+B를 출력한다.
 """
 
-T=int(input())
+T=int(input()) # 사용자로부터 정수 입력받기
 
-for i in range(T):
+for i in range(T): # 0부터 T가 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
     A, B=map(int, input().split())
     print("%d" %(A+B))
