@@ -9,6 +9,6 @@
 
 T=int(input()) # 사용자로부터 정수 입력받기
 
-for i in range(T, 0, -1):
-    A, B=map(int, input().split())
+for i in range(T, 0, -1): # T부터 0이 되기 전까지 1씩 감소한 값을 i에 대입하며 반복
+    A, B=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
     print(A+B)
