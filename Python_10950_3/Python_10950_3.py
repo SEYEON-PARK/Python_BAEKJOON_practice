@@ -7,7 +7,7 @@
 각 테스트 케이스마다 A+B를 출력한다.
 '''
 
-T=int(input())
+T=int(input()) # 사용자로부터 정수 입력받기
 
 for i in range(T, 0, -1):
     A, B=map(int, input().split())
