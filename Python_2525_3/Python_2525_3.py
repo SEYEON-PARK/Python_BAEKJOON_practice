@@ -16,12 +16,12 @@ time=int(input()) # 사용자로부터 정수(요리하는 데 필요한 시간)
 
 if(time//60==0): # 만약, time//60의 값이 0이라면
     m+=time # m에 m+time 값 대입하기
-else: # time//60의 값이 0이 
-    h+=time//60
-    m+=time%60
+else: # time//60의 값이 0이 아니라면
+    h+=time//60 # h에 h + time//60의 값 대입하기
+    m+=time%60 # m에 m + time%60의 값 대입하기
     
-if(m>=60):
-    h+=m//60
+if(m>=60): # 만약, m이 60보다 크거나 같다면
+    h+=m//60 # h에 h + m//60의 값 
     m=m%60
     
 if(h>=24):
