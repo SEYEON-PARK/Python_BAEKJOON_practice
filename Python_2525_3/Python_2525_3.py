@@ -11,12 +11,12 @@ KOI 전자에서는 건강에 좋고 맛있는 훈제오리구이 요리를 간�
 (단, 시는 0부터 23까지의 정수, 분은 0부터 59까지의 정수이다. 디지털 시계는 23시 59분에서 1분이 지나면 0시 0분이 된다.)
 '''
 
-h, m=map(int, input().split())
-time=int(input())
+h, m=map(int, input().split()) # 사용자로부터 두 개의 정수(시, 분) 입력받기
+time=int(input()) # 사용자로부터 정수(요리하는 데 필요한 시간) 입력받기
 
-if(time//60==0):
-    m+=time
-else:
+if(time//60==0): # 만약, time//60의 값이 0이라면
+    m+=time # m에 m+time 값 대입하기
+else: # time//60의 값이 0이 
     h+=time//60
     m+=time%60
     
