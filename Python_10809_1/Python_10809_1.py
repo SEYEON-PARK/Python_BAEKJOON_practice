@@ -12,8 +12,8 @@ alphabet_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'
 
 S=input() # 사용자로부터 문자열(영어 단어) 입력받기
 
-for i in alphabet_list: #
-    if i in S:
+for i in alphabet_list: # alphabet_list에 있는 요소를 하나씩 i에 대입하며 반복
+    if i in S: # 만약, 문자열 S 안에 문자열 i가 있다면
         print(S.index(i), end=" ")
     else:
         print(-1, end=' ')
