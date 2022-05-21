@@ -12,9 +12,9 @@ alphabet_list = ['a', "b", 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'
 
 S=input() # 사용자로부터 문자열 입력받기
 
-for i in alphabet_list: # 
-    if i in S:
-        print(S.index(i), end=" ")
+for i in alphabet_list: # alphabet_list에 있는 요소들을 하나씩 i에 대입하며 반복
+    if i in S: # 만약, i가 문자열 S 안에 있다면
+        print(S.index(i), end=" ") #
     else:
         print(-1, end=' ')
         
