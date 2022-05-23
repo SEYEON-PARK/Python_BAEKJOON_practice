@@ -8,9 +8,9 @@
 만약, 어떤 알파벳이 단어에 포함되어 있지 않다면 -1을 출력한다. 단어의 첫 번째 글자는 0번째 위치이고, 두 번째 글자는 1번째 위치이다.
 """
 
-import string
+import string # 모듈 string 부르기
 
-alphabet_list = string.ascii_lowercase
+alphabet_list = string.ascii_lowercase # 모듈 string 안에 있는 ascii_lowercase를 alphabet_list에 저장 
 
 S=input()
 
