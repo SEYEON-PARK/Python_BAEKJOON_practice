@@ -12,10 +12,10 @@ import string # 모듈 string 부르기
 
 alphabet_list = string.ascii_lowercase # 모듈 string 안에 있는 ascii_lowercase를 alphabet_list에 저장 
 
-S=input()
+S=input() # 사용자로부터 문자열 입력받기
 
-for i in alphabet_list:
-    if i in S:
+for i in alphabet_list: # i에 alphabet_list에 있는 요소들을 하나씩 대입하며 반복
+    if i in S: # 만약, i가 문자열 S 안에 있다면
         print(S.index(i), end=" ")
     else:
         print(-1, end=' ')
