@@ -16,6 +16,6 @@ S=input() # 사용자로부터 문자열 입력받기
 
 for i in alphabet_list: # i에 alphabet_list에 있는 요소들을 하나씩 대입하며 반복
     if i in S: # 만약, i가 문자열 S 안에 있다면
-        print(S.index(i), end=" ")
-    else:
-        print(-1, end=' ')
+        print(S.index(i), end=" ") # 문자열 S 안에 있는 i의 위치(인덱스 번호) 출력하기
+    else: # i가 문자열 S 안에 없다면
+        print(-1, end=' ') # -1 출력하기
