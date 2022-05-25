@@ -14,8 +14,8 @@ alphabet_list = ascii_lowercase # alphabet_list에 ascii_lowercase 대입하기
 
 S=input() # 사용자로부터 문자열 입력받기
 
-for i in alphabet_list:
-    if i in S:
+for i in alphabet_list: # alphabet_list에 있는 요소들을 i에 대입하며 반복
+    if i in S: # 만약, i가 문자열 S 안에 있다면
         print(S.index(i), end=" ")
     else:
         print(-1, end=' ')
