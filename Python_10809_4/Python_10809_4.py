@@ -8,11 +8,11 @@
 만약, 어떤 알파벳이 단어에 포함되어 있지 않다면 -1을 출력한다. 단어의 첫 번째 글자는 0번째 위치이고, 두 번째 글자는 1번째 위치이다.
 '''
 
-from string import *
+from string import * # 모듈 string 안에 있는 것들 모두 가져오기
 
-alphabet_list = ascii_lowercase
+alphabet_list = ascii_lowercase # alphabet_list에 ascii_lowercase 대입하기
 
-S=input()
+S=input() # 사용자로부터 문자열 입력받기
 
 for i in alphabet_list:
     if i in S:
