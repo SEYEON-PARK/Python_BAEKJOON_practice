@@ -8,11 +8,11 @@
 만약, 어떤 알파벳이 단어에 포함되어 있지 않다면 -1을 출력한다. 단어의 첫 번째 글자는 0번째 위치이고, 두 번째 글자는 1번째 위치이다.
 """
 
-alphabet_list = "abcdefghijklmnopqrstuvwxyz"
+alphabet_list = "abcdefghijklmnopqrstuvwxyz" # 알파벳 소문자로 이루어진 문자열 alphabet_list 생성
 
-S=input()
+S=input() # 사용자로부터 문자열 입력받기
 
-for i in alphabet_list:
+for i in alphabet_list: #
     if i in S:
         print(S.index(i), end=" ")
     else:
