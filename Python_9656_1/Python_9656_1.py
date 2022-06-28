@@ -8,9 +8,9 @@
 상근이가 게임을 이기면 SK를, 창영이가 게임을 이기면 CY을 출력한다.
 '''
 
-N=int(input()) // 사용자로부터 정수 입력받기
+N=int(input()) # 사용자로부터 정수 입력받기
 
-if N%2==0:
-    print("SK")
+if N%2==0: # N%2의 값이 0이라면
+    print("SK") # "SK" 출력하기
 else:
     print("CY")
