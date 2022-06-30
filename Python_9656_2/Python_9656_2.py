@@ -10,7 +10,7 @@
 
 N=int(input()) # 사용자로부터 정수 입력받기
 
-if (N%2==0):
-    print("SK")
+if (N%2==0): # 만약, N%2의 값이 0과 같다면
+    print("SK") # "SK" 출력하기
 else:
     print("CY")
