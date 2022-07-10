@@ -13,15 +13,15 @@ for i in range(2*N): # i에 0부터 2*N이 되기 전까지 1씩 증가하며 �
     
     if i%2==0: # 만약, i%2의 값이 0과 같다면
         a=1 # a에 1 대입하기
-    else: 
-        a=0
+    else: # 만약, i%2의 값이 0과 같지 않다면
+        a=0 # a에 0 대입하기
         
-    for j in range(N):
-        if a%2==1:
-            print("*", end="")
-            a+=1
-        else:
-            print(" ", end="")
-            a+=1
+    for j in range(N): # j에 0부터 N이 되기 전까지 1씩 증가하며 반복
+        if a%2==1: # 만약, a%2의 값이 1과 같다면
+            print("*", end="") # "*" 출력하기
+            a+=1 # a에 a+1 값 대입하기
+        else: # a%2의 값이 1과 같지 않다면
+            print(" ", end="") # " " 출력하기
+            a+=1 # a에 a+1 값 대입하기
             
-    print()
+    print() # 한 줄 띄기
