@@ -12,3 +12,15 @@ X와 Y의 값은 3보다 작거나 같고, X와 Y가 같을 수도 있다.
 
 첫째 줄에 공이 들어있는 컵의 번호를 출력한다. 공이 사라져서 컵 밑에 없는 경우에는 -1을 출력한다.
 '''
+
+M=int(input())
+ball_cup=1
+
+for i in range(M):
+    A, B=map(int, input().split())
+    if(A==ball_cup):
+        ball_cup=B
+    elif(B==ball_cup):
+        ball_cup=A
+
+print(ball_cup)
