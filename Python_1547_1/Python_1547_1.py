@@ -13,14 +13,14 @@ X와 Y의 값은 3보다 작거나 같고, X와 Y가 같을 수도 있다.
 첫째 줄에 공이 들어있는 컵의 번호를 출력한다. 공이 사라져서 컵 밑에 없는 경우에는 -1을 출력한다.
 '''
 
-M=int(input()) # 사용자로부터 정수 입력받기
+M=int(input()) # 사용자로부터 정수(컵의 위치를 바꾼 횟수) 입력받기
 ball_cup=1 # ball_cup에 1 대입하기
 
 for i in range(M): # i에 0부터 M이 되기 전까지 1씩 증가한 값을 대입하며 반복
-    A, B=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
+    A, B=map(int, input().split()) # 사용자로부터 두 개의 정수(컵의 위치를 바꾼 방법) 입력받기
     if(A==ball_cup): # 만약, A의 값이 ball_cup의 값과 같다면
         ball_cup=B # ball_cup에 B의 값 대입하기
-    elif(B==ball_cup): # 
-        ball_cup=A
+    elif(B==ball_cup): # A의 값이 ball_cup의 값과 같지 않고, B의 값이 ball_cup의 값과 같다면
+        ball_cup=A # ball_cup에 A의 값 대입하기
 
-print(ball_cup)
+print(ball_cup) # 결과 출력하기
