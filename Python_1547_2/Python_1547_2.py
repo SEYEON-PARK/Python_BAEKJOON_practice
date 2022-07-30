@@ -13,8 +13,8 @@ X와 Y의 값은 3보다 작거나 같고, X와 Y가 같을 수도 있다.
 첫째 줄에 공이 들어있는 컵의 번호를 출력한다. 공이 사라져서 컵 밑에 없는 경우에는 -1을 출력한다.
 """
 
-M=int(input())
-ball_cup=1
+M=int(input()) # 사용자로부터 정수 입력받기
+ball_cup=1 # ball_cup에 1 대입하기
 
 for i in range(M):
     A, B=map(int, input().split())
