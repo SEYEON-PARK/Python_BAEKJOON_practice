@@ -16,10 +16,10 @@ X와 Y의 값은 3보다 작거나 같고, X와 Y가 같을 수도 있다.
 M=int(input()) # 사용자로부터 정수 입력받기
 ball_cup=1 # ball_cup에 1 대입하기
 
-for i in range(M):
-    A, B=map(int, input().split())
-    if(A==ball_cup):
-        ball_cup=B
+for i in range(M): # 0부터 M이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
+    A, B=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
+    if(A==ball_cup): # 만약, A의 값이 ball_cup의 값과 같다면
+        ball_cup=B # ball_cup에 B의 값 대입하기
         B=0
     if(B==ball_cup):
         ball_cup=A
