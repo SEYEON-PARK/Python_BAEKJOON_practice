@@ -18,8 +18,8 @@ ball_cup=1 # ball_cup에 1 대입하기
 
 for i in range(M,0,-1): # M부터 0이 되기 전까지 1씩 감소시킨 값을 i에 대입하며 반복
     A, B=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
-    if(A==ball_cup):
-        ball_cup=B
+    if(A==ball_cup): # 만약, A의 값이 ball_cup의 값과 같다면
+        ball_cup=B # ball_cup에 B의 값 대입하기
     elif(B==ball_cup):
         ball_cup=A
 
