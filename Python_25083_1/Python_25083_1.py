@@ -11,4 +11,4 @@ print("r`-_   ,'  ,/")
 print(" \\. \". L_r'")
 print("   `~\\/")
 print("      |")
-print("      |") // 새싹
+print("      |") // 새싹 출력하기
