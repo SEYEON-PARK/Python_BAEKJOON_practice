@@ -8,4 +8,4 @@
 '''
 
 name=input() # 사용자로부터 문자열 입력받기
-print(name+"??!")
+print(name+"??!") # 결과 출력하기
