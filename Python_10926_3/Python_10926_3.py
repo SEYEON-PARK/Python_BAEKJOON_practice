@@ -8,5 +8,5 @@
 '''
 
 name=input() # 사용자로부터 문자열 입력받기
-print(name, end="")
+print(name, end="") # 문자열 name 출력하기
 print("??!")
