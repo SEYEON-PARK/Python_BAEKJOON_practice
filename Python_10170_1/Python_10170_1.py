@@ -18,4 +18,4 @@ print("-----------------------")
 print("Green Bay      8   7  1")
 print("Chicago        8   8  0")
 print("Detroit        7   9  0")
-print("Minnesota      5  10  1")
+print("Minnesota      5  10  1") // 결과
