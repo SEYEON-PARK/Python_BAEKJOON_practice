@@ -15,8 +15,8 @@
 
 x, y=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
 
-if(y>x):
-    y=y%x;
-    print(y)
+if(y>x): # 만약, y가 x보다 크다면
+    y=y%x; # y에 y%x의 값 대입하기
+    print(y) # y의 값 출력하기
 else:
     print(x+y)
