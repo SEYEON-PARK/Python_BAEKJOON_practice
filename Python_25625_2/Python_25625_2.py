@@ -13,7 +13,7 @@
 첫째 줄에 민준이가 버스에 탑승하기 위해서 기다려야 하는 최소 시간을 출력한다.
 """
 
-x, y=map(int, input().split())
+x, y=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
 
 if(y>x):
     y=y%x;
