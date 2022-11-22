@@ -5,3 +5,12 @@ N개의 숫자가 공백 없이 쓰여있다. 이 숫자를 모두 합해서 출
 
 입력으로 주어진 숫자 N개의 합을 출력한다.
 '''
+
+N=int(input())
+s=input()
+sum=0
+
+for i in s:
+    sum+=int(i)
+
+print(sum)
