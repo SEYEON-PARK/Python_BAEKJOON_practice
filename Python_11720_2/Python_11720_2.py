@@ -6,9 +6,9 @@ N개의 숫자가 공백 없이 쓰여있다. 이 숫자를 모두 합해서 출
 입력으로 주어진 숫자 N개의 합을 출력한다.
 """
 
-N=int(input())
-li=list(input())
-sum=0
+N=int(input()) # 사용자로부터 정수 입력받기
+li=list(input()) # 입력받은 문자열을 리스트에 저장하기
+sum=0 # 합을 저장할 변수 선언 및 초기화
 
 for i in li:
     sum+=int(i)
