@@ -11,6 +11,6 @@ li=list(input()) # 입력받은 문자열을 리스트에 저장하기
 sum=0 # 합을 저장할 변수 선언 및 초기화
 
 for i in li: # 리스트에 저장된 문자열을 한 글자씩 i에 대입하며 반복
-    sum+=int(i)
+    sum+=int(i) # sum에 sum+int(i)의 값 대입하기
 
-print(sum)
+print(sum) # 결과 출력하기
