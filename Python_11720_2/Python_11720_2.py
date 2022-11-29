@@ -10,7 +10,7 @@ N=int(input()) # 사용자로부터 정수 입력받기
 li=list(input()) # 입력받은 문자열을 리스트에 저장하기
 sum=0 # 합을 저장할 변수 선언 및 초기화
 
-for i in li:
+for i in li: # 리스트에 저장된 문자열을 한 글자씩 i에 대입하며 반복
     sum+=int(i)
 
 print(sum)
