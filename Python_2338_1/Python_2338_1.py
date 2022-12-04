@@ -7,8 +7,8 @@
 '''
 
 a=int(input()) # 사용자로부터 정수 입력받기
-b=int(input())
+b=int(input()) # 사용자로부터 정수 입력받기
 
-print(a+b)
-print(a-b)
-print(a*b)
+print(a+b) # a+b의 값 출력하기
+print(a-b) # a-b의 값 출력하기
+print(a*b) # a*b의 값 출력하기
