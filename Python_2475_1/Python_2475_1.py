@@ -9,3 +9,7 @@
 첫째 줄에 검증수를 출력한다.
 '''
 
+a, b, c, d, e=map(int, input().split())
+sum=a*a+b*b+c*c+d*d+e*e
+
+print(sum%10)
