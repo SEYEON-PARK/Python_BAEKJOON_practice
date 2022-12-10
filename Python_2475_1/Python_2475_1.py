@@ -10,6 +10,6 @@
 '''
 
 a, b, c, d, e=map(int, input().split()) # 사용자로부터 다섯 개의 정수 입력받기
-sum=a*a+b*b+c*c+d*d+e*e # 각 정수 제곱의 sum에 저장 
+sum=a*a+b*b+c*c+d*d+e*e # 각 정수 제곱의 합을 sum에 저장 
 
 print(sum%10) # 결과 출력하기
