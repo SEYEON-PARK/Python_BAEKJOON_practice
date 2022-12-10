@@ -8,3 +8,11 @@
 
 첫째 줄에 검증수를 출력한다.
 '''
+
+num=list(map(int, input().split()))
+sum=0
+
+for i in num:
+    sum+=i*i
+
+print(sum%10)
