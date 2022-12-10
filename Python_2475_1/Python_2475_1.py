@@ -9,7 +9,7 @@
 첫째 줄에 검증수를 출력한다.
 '''
 
-a, b, c, d, e=map(int, input().split())
+a, b, c, d, e=map(int, input().split()) # 사용자로부터 다섯 개의 정수 입력받기
 sum=a*a+b*b+c*c+d*d+e*e
 
 print(sum%10)
