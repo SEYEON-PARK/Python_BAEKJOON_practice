@@ -10,9 +10,9 @@
 '''
 
 num=list(map(int, input().split())) # 사용자로부터 정수를 입력받아 공백 기준으로 자른 후, 리스트 num에 넣기
-sum=0
+sum=0 # 합을 저장할 변수 sum 선언 및 초기화
 
-for i in num:
-    sum+=i*i
+for i in num: # 리스트 num에 있는 정수를 하나씩 i에 대입하며 반복
+    sum+=i*i # sum에 sum+(i*i) 값 대입하기
 
-print(sum%10)
+print(sum%10) # 결과 출력하기
