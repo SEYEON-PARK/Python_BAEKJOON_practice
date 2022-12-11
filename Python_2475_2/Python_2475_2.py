@@ -9,7 +9,7 @@
 첫째 줄에 검증수를 출력한다.
 '''
 
-num=list(map(int, input().split()))
+num=list(map(int, input().split())) // 사용자로부터 정수를 입력받아 공백 기준으로 자른 후, 리스트 num에 넣기
 sum=0
 
 for i in num:
