@@ -6,7 +6,7 @@
 첫째 줄에 A+B를 출력한다.
 """
 
-A=int(input())
+A=int(input()) # 사용자로부터 정수 입력받기
 B=int(input())
 
 print(A+B)
