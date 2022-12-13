@@ -7,6 +7,6 @@
 """
 
 A=int(input()) # 사용자로부터 정수 입력받기
-B=int(input())
+B=int(input()) # 사용자로부터 정수 입력받기
 
-print(A+B)
+print(A+B) # 결과 출력하기
