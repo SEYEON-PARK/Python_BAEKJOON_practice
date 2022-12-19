@@ -10,10 +10,10 @@
 N=int(input()) # 사용자로부터 정수 입력받기
 num=list(map(int, input().split())) # 사용자로부터 N개의 정수를 입력받은 후, 리스트 num에 넣기
 v=int(input()) # 사용자로부터 정수 입력받기
-count=0
+count=0 # 변수 count 선언 및 초기화
 
-for i in num:
-    if(v==i):
-        count+=1
+for i in num: # 리스트 num에 들어 있는 거를 하나씩 i에 대입하며 반복
+    if(v==i): # 만약, v가 i와 같다면
+        count+=1 # count에 count+1에 대입하기
     
-print(count)
+print(count) # 결론 출력하기
