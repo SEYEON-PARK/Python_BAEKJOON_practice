@@ -7,9 +7,9 @@
 첫째 줄에 입력으로 주어진 N개의 정수 중에 v가 몇 개인지 출력한다.
 '''
 
-N=int(input()) # 사용자로부터 정수 입력받기
+N=int(input()) # 사용자로부터 정수(정수의 개수) 입력받기
 num=list(map(int, input().split())) # 사용자로부터 N개의 정수를 입력받은 후, 리스트 num에 넣기
-v=int(input()) # 사용자로부터 정수 입력받기
+v=int(input()) # 사용자로부터 정수(찾으려고 하는 정수) 입력받기
 count=0 # 변수 count 선언 및 초기화
 
 for i in num: # 리스트 num에 들어 있는 거를 하나씩 i에 대입하며 반복
