@@ -9,11 +9,11 @@
 """
 
 while True: # 무한 반복
-    name, age, weight = input().split() # 사용자로부터 문자열 세 개를 띄어쓰기로 나누어 입력받기
+    name, age, weight = input().split() # 사용자로부터 문자열 세 개를 띄어쓰기를 기준으로 나누어 입력받기
     age, weight = int(age), int(weight) # age와 weight를 정수형으로 바꾸기
     if(name=='#'): # 만약, name이 '#'과 같다면
         break # 반복문을 빠져 나가기
     if age > 17 or weight >= 80: # 만약, age가 17보다 크거나 weight가 80보다 크거나 같다면
-        print(name+' '+'Senior') # 이름 뒤에 ' '와 'Senior'을 함께 출력하기
-    else:
-        print(name+' '+'Junior')
+        print(name+' '+'Senior') # name 뒤에 ' '와 'Senior'을 함께 출력하기
+    else: # age가 17보다 작거나 같고 weight가 80보다 작다면
+        print(name+' '+'Junior') # name 뒤에 ' '와 'Junior'을 함께 출력하기
