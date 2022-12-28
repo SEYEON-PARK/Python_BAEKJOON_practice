@@ -8,11 +8,11 @@
 입력 받은 각 회원에 대해 이름과 분류를 출력한다. 성인부 회원이면 'Senior', 청소년부 회원이면 'Junior'를 출력한다.
 """
 
-while True:
-    name, age, weight = input().split()
-    age, weight = int(age), int(weight)
-    if(name=='#'):
-        break
+while True: # 무한 반복
+    name, age, weight = input().split() # 사용자로부터 문자열 세 개를 띄어쓰기로 나누어 입력받기
+    age, weight = int(age), int(weight) # age와 weight를 정수형으로 바꾸기
+    if(name=='#'): # 만약, name이 '#'과 같다면
+        break # 반복문을 빠져 나가기
     if age > 17 or weight >= 80:
         print(name+' '+'Senior')
     else:
