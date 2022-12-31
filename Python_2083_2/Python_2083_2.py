@@ -15,5 +15,5 @@ while True: # 무한 반복
         break # 반복문을 종료하기
     if age > 17 or weight >= 80: # 만약, age가 17보다 크거나 weight가 80보다 크거나 같다면
         print(name+' '+'Senior') # name+' '+'Senior' 형식에 맞게 출력하기
-    else:
-        print(name+' '+'Junior')
+    else: # age가 17보다 작거나 같고 weight가 80보다 작다면
+        print(name+' '+'Junior') # name+' '+'Junior' 형식에 맞게 출력하기
