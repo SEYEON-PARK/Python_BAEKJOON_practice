@@ -13,7 +13,7 @@ while True: # 무한 반복
     age, weight = int(age), int(weight) # age와 weight를 정수형으로 변환하여 저장
     if(name =='#' and age == 0 and weight ==0): # 만약, name이 '#'과 같고 age가 0이며 weight가 0이라면
         break # 반복문을 종료하기
-    if age > 17 or weight >= 80:
-        print(name+' '+'Senior')
+    if age > 17 or weight >= 80: # 만약, age가 17보다 크거나 weight가 80보다 크거나 같다면
+        print(name+' '+'Senior') # name+' '+'Senior' 형식에 맞게 출력하기
     else:
         print(name+' '+'Junior')
