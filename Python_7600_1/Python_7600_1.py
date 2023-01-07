@@ -17,8 +17,8 @@ while True: # 무한 반복
     if(s=='#'): # 만약, s가 '#'과 같다면
         break # 반복문 빠져 나가기
     
-    alpha=""
-    count=0
+    alpha="" # 빈 문자열 alpha 생성
+    count=0 # 변수 count 생성 및 0으로 초기화
     for i in s:
         if i.isalpha():
             if i in alpha:
