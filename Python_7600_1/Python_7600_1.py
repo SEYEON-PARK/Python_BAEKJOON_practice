@@ -9,3 +9,21 @@
 
 각 줄마다 출몰한 알파벳의 개수를 출력하면 된다.
 '''
+
+while True:
+    s=input()
+    s=s.upper()
+    
+    if(s=='#'):
+        break
+    
+    alpha=""
+    count=0
+    for i in s:
+        if i.isalpha():
+            if i in alpha:
+                continue;
+            count+=1
+            alpha+=i
+            
+    print(count)
