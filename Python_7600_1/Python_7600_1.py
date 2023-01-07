@@ -22,8 +22,8 @@ while True: # 무한 반복
     for i in s: # 문자열 s에 있는 문자를 하나씩 i에 대입하며 반복
         if i.isalpha(): # 만약, i가 알파벳이라면
             if i in alpha: # 만약, i가 문자열 alpha 안에 있는 문자(알파벳)라면 
-                continue; # 반복문 위로 이동하여 계속 반복
+                continue; # 위로 이동하여 반복문 계속 반복
             count+=1 # count에 count+1의 값 대입하기
-            alpha+=i # alpha에 alpha+1의 값 대입하기
+            alpha+=i # alpha에 alpha+i의 값 대입하기
             
     print(count) # 결과 출력하기
