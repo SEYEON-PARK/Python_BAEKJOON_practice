@@ -15,15 +15,15 @@ while True: # 무한 반복
     s=s.lower() # s에 s를 소문자로 바꾼 문자열을 저장
     
     if(s=='#'): # 만약, s가 '#'과 같다면
-        break
+        break # 반복문 빠져 나가기
     
-    alpha=""
-    count=0
-    for i in s:
-        if i.isalpha():
-            if i in alpha:
-                continue;
-            count+=1
+    alpha="" # 변수 alpha 만들고 빈 문자열로 초기화
+    count=0 # 변수 count 선언 및 초기화
+    for i in s: # 문자열 s에 있는 문자를 하나씩 i에 대입하며 반복
+        if i.isalpha(): # 만약, i가 알파벳이라면
+            if i in alpha: # 만약, 문자 i가 문자열 alpha 안에 있는 문자라면
+                continue; # 반복문 위쪽으로 돌아가서 계속 반복문 돌기
+            count+=1 # 
             alpha+=i
             
     print(count)
