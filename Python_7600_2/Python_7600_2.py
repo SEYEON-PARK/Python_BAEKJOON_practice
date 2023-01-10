@@ -10,11 +10,11 @@
 각 줄마다 출몰한 알파벳의 개수를 출력하면 된다.
 '''
 
-while True:
-    s=input()
-    s=s.lower()
+while True: # 무한 반복
+    s=input() # 사용자로부터 문자열 입력받기
+    s=s.lower() # s에 s를 소문자로 바꾼 문자열을 저장
     
-    if(s=='#'):
+    if(s=='#'): # 만약, s가 '#'과 같다면
         break
     
     alpha=""
