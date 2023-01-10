@@ -23,7 +23,7 @@ while True: # 무한 반복
         if i.isalpha(): # 만약, i가 알파벳이라면
             if i in alpha: # 만약, 문자 i가 문자열 alpha 안에 있는 문자라면
                 continue; # 반복문 위쪽으로 돌아가서 계속 반복문 돌기
-            count+=1 # 
-            alpha+=i
+            count+=1 # count에 count+1의 값 대입하기
+            alpha+=i # alpha에 alpha+i의 값 대입하기
             
-    print(count)
+    print(count) # 결론 출력하기
