@@ -17,7 +17,7 @@ while(True): # 무한 반복
     count=0 # 변수 count 선언 및 초기화
     
     for i in s: # 문자열 s에 있는 문자들을 하나씩 i에 대입하며 반복
-        if i in mo: 
-            count+=1
+        if i in mo: # 만약, 문자 i가 문자열 mo 안에 있는 문자라면
+            count+=1 # count에 1 더하기
     
-    print(count)
+    print(count) # 결과 출력하기
