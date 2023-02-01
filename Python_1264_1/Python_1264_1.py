@@ -11,13 +11,13 @@ mo="aeiouAEIOU" # 모음 문자열 선언
 
 while(True): # 무한 반복
     s=input() # 사용자로부터 문자열 입력받기
-    if(s=="#"):
-        break
+    if(s=="#"): # 만약, s가 "#"과 같다면
+        break # 반복문 빠져 나오기
         
-    count=0
+    count=0 # 변수 count 선언 및 초기화
     
-    for i in s:
-        if i in mo:
+    for i in s: # 문자열 s에 있는 문자들을 하나씩 i에 대입하며 반복
+        if i in mo: 
             count+=1
     
     print(count)
