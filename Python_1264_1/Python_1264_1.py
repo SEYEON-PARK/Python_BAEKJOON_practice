@@ -7,10 +7,10 @@
 각 줄마다 모음의 개수를 세서 출력한다.
 '''
 
-mo="aeiouAEIOU"
+mo="aeiouAEIOU" # 모음 문자열 선언
 
-while(True):
-    s=input()
+while(True): # 무한 반복
+    s=input() # 사용자로부터 문자열 입력받기
     if(s=="#"):
         break
         
