@@ -7,3 +7,17 @@
 각 줄마다 모음의 개수를 세서 출력한다.
 '''
 
+mo=['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', "O", 'U']
+
+while(True):
+    s=input()
+    if(s=="#"):
+        break
+        
+    count=0
+    
+    for i in s:
+        if i in mo:
+            count+=1
+    
+    print(count)
