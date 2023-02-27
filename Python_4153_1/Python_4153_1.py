@@ -8,10 +8,10 @@
 
 while(True): # 무한 반복
     line=list(map(int, input().split())) # 사용자로부터 정수들 입력받기
-    line.sort()
+    line.sort() # 리스트 line을 오름차순 정렬하기
     
-    if(line[0]==0 and line[1]==0 and line[2]==0):
-        break;
+    if(line[0]==0 and line[1]==0 and line[2]==0): # 만약, line[0]이 0이고, line[1]도 0이고, line[2]도 0이라면
+        break; # 반복문 빠져 나가기
     elif(line[2]*line[2]==line[0]*line[0]+line[1]*line[1]):
         print("right");
     else:
