@@ -5,3 +5,14 @@
 
 각 입력에 대해 직각 삼각형이 맞다면 "right", 아니라면 "wrong"을 출력한다.
 '''
+
+while(True):
+    line=list(map(int, input().split()))
+    line.sort()
+    
+    if(line[0]==0 and line[1]==0 and line[2]==0):
+        break;
+    elif(line[-1]*line[-1]==line[0]*line[0]+line[1]*line[1]):
+        print("right");
+    else:
+        print("wrong");
