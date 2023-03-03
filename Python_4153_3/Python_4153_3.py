@@ -6,9 +6,9 @@
 각 입력에 대해 직각 삼각형이 맞다면 "right", 아니라면 "wrong"을 출력한다.
 '''
 
-while(True):
-    line=list(map(int, input().split()))
-    line=sorted(line)
+while(True): # 무한 반복
+    line=list(map(int, input().split())) # 사용자로부터 세 개의 정수 입력받기
+    line=sorted(line) # 
     
     if(line[0]==0 and line[1]==0 and line[2]==0):
         break;
