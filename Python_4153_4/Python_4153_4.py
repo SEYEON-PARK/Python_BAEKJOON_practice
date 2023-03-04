@@ -15,7 +15,7 @@ while(True): # 무한 반복
     
     if(line[0]==0 and line[1]==0 and line[2]==0): # 만약, line[0]이 0이고, line[1]도 0이고, line[2]도 0이라면
         break; # 반복문 빠져 나가기
-    elif(square(line[2])==square(line[0])+square(line[1])): # 만약, line[0]이 0이 아니거나, line[1]이 0이 아니거나, line[2]이 0이 아니고, line[2]의 제곱이 (line[0]의 제곱+line[1]의 제곱)과 같다면
+    elif(square(line[2])==square(line[0])+square(line[1])): # 만약, line[0]이 0이 아니거나, line[1]이 0이 아니거나, line[2]이 0이 아니고, square(line[2])이 (square(line[0])+square(line[1]))과 같다면
         print("right"); # "right" 출력하기
     else: # line[0]이 0이 아니거나, line[1]이 0이 아니거나, line[2]이 0이 아니고, line[2]의 제곱이 (line[0]의 제곱+line[1]의 제곱)과 같지 않다면
         print("wrong"); # "wrong" 출력하기
