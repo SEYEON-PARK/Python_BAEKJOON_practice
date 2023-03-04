@@ -7,7 +7,7 @@
 """
 
 def square(a): # 매개변수로 받은 수의 제곱을 반환하는 함수 square() 선언
-    return a*a;
+    return a*a; # a의 제곱 반환
 
 while(True): # 무한 반복
     line=list(map(int, input().split()))
