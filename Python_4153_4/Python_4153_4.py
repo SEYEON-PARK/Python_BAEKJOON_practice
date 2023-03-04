@@ -6,10 +6,10 @@
 각 입력에 대해 직각 삼각형이 맞다면 "right", 아니라면 "wrong"을 출력한다.
 """
 
-def square(a):
+def square(a): # 매개변수로 받은 수의 제곱을 반환하는 함수 square() 선언
     return a*a;
 
-while(True):
+while(True): # 무한 반복
     line=list(map(int, input().split()))
     line.sort()
     
