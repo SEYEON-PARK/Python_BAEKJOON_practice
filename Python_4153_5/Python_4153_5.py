@@ -6,11 +6,11 @@
 각 입력에 대해 직각 삼각형이 맞다면 "right", 아니라면 "wrong"을 출력한다.
 '''
 
-import math;
+import math; # math 라이브러리 import하기!
 
-while(True):
-    line=list(map(int, input().split()))
-    line.sort()
+while(True): # 무한 반복
+    line=list(map(int, input().split())) # 사용자로부터 세 개의 정수를 입력받아 리스트 line에 저장!
+    line.sort() # 리스트 line 정렬하기!
     
     if(line[0]==0 and line[1]==0 and line[2]==0):
         break;
