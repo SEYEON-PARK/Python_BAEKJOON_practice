@@ -14,7 +14,7 @@ while(True): # 무한 반복
     
     if(line[0]==0 and line[1]==0 and line[2]==0): # 만약, line[0]이 0이고, line[1]도 0이고, line[2]도 0이라면
         break; # 반복문 빠져 나가기
-    elif(pow(line[2], 2)==pow(line[0], 2)+pow(line[1], 2)): 
-        print("right");
-    else:
-        print("wrong");
+    elif(pow(line[2], 2)==pow(line[0], 2)+pow(line[1], 2)): # 만약, line[0]이 0이 아니거나, line[1]이 0이 아니거나, line[2]이 0이 아니고, pow(line[2], 2)의 값이 (pow(line[0], 2)+pow(line[1], 2))의 값과 같다면
+        print("right"); # "right" 출력하기
+    else: # 만약, line[0]이 0이 아니거나, line[1]이 0이 아니거나, line[2]이 0이 아니고, pow(line[2], 2)의 값이 (pow(line[0], 2)+pow(line[1], 2))의 값과 같지 않다면
+        print("wrong"); # "wrong" 출력하기
