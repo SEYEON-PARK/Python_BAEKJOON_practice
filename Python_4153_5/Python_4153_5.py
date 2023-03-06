@@ -12,9 +12,9 @@ while(True): # 무한 반복
     line=list(map(int, input().split())) # 사용자로부터 세 개의 정수를 입력받아 리스트 line에 저장!
     line.sort() # 리스트 line 정렬하기!
     
-    if(line[0]==0 and line[1]==0 and line[2]==0):
-        break;
-    elif(pow(line[2], 2)==pow(line[0], 2)+pow(line[1], 2)):
+    if(line[0]==0 and line[1]==0 and line[2]==0): # 만약, line[0]이 0이고, line[1]도 0이고, line[2]도 0이라면
+        break; # 반복문 빠져 나가기
+    elif(pow(line[2], 2)==pow(line[0], 2)+pow(line[1], 2)): 
         print("right");
     else:
         print("wrong");
