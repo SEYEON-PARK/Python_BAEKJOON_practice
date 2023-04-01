@@ -7,7 +7,7 @@
 S의 i번째 글자를 출력한다.
 '''
 
-s=input()
+s=input() # 사용자로부터 문자열 입력받기
 i=int(input())
 
 print(s[i-1])
