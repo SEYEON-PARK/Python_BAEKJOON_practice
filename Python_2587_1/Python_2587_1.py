@@ -9,3 +9,19 @@
 
 첫째 줄에는 평균을 출력하고, 둘째 줄에는 중앙값을 출력한다. 평균과 중앙값은 모두 자연수이다.
 """
+
+num=[0, 0, 0, 0, 0]
+num[0]=int(input())
+num[1]=int(input())
+num[2]=int(input())
+num[3]=int(input())
+num[4]=int(input())
+
+num.sort()
+sum=0
+
+for i in num:
+    sum+=i
+    
+print(int(sum/5))
+print(num[2])
