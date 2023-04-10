@@ -10,18 +10,18 @@
 첫째 줄에는 평균을 출력하고, 둘째 줄에는 중앙값을 출력한다. 평균과 중앙값은 모두 자연수이다.
 """
 
-num=[0, 0, 0, 0, 0] // 리스트 num 선언 및 초기화
+num=[0, 0, 0, 0, 0] # 리스트 num 선언 및 초기화
 num[0]=int(input())
 num[1]=int(input())
 num[2]=int(input())
 num[3]=int(input())
-num[4]=int(input()) // 사용자로부터 정수 입력받기
+num[4]=int(input()) # 사용자로부터 5개의 정수 입력받기
 
-num.sort()
-sum=0
+num.sort() # 배열 정렬
+sum=0 # 변수 선언 및 초기화
 
-for i in num:
-    sum+=i
+for i in num: # i에 리스트 num에 있는 요소들 하나씩 대입하며 반복
+    sum+=i # sum에 sum+i의 값 대입하기
     
-print(int(sum/5))
-print(num[2])
+print(int(sum/5)) # 평균 출력하기
+print(num[2]) # 중앙값 출력하기
