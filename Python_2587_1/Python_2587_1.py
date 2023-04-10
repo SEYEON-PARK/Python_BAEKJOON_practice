@@ -10,12 +10,12 @@
 첫째 줄에는 평균을 출력하고, 둘째 줄에는 중앙값을 출력한다. 평균과 중앙값은 모두 자연수이다.
 """
 
-num=[0, 0, 0, 0, 0]
+num=[0, 0, 0, 0, 0] // 리스트 num 선언 및 초기화
 num[0]=int(input())
 num[1]=int(input())
 num[2]=int(input())
 num[3]=int(input())
-num[4]=int(input())
+num[4]=int(input()) // 사용자로부터 정수 입력받기
 
 num.sort()
 sum=0
