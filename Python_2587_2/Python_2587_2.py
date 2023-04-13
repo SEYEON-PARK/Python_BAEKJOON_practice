@@ -15,11 +15,11 @@ num=[0, 0, 0, 0, 0] # 리스트 num 선언 및 0으로 초기화
 for i in range(5): # i에 0부터 5가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     num[i]=int(input()) # 사용자로부터 정수 입력받아 num[i]에 대입하기
 
-num.sort() # 리스트 num 정렬하기
+num.sort() # 리스트 num 오름차순 정렬하기
 sum=0 # 변수 sum 선언 및 초기화
 
 for i in num: # i에 num에 있는 요소들을 하나씩 대입하며 반복
     sum+=i # sum에 sum+i의 값 대입하기
     
-print(int(sum/5))
-print(num[2])
+print(int(sum/5)) # 평균을 정수형으로 변경하여 출력하기
+print(num[2]) # 중앙값 출력하기
