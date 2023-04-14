@@ -10,14 +10,14 @@
 첫째 줄에는 평균을 출력하고, 둘째 줄에는 중앙값을 출력한다. 평균과 중앙값은 모두 자연수이다.
 '''
 
-num=[0, 0, 0, 0, 0]
-sum=0
+num=[0, 0, 0, 0, 0] # 리스트 num 선언 및 초기화
+sum=0 # 변수 선언 및 초기화
 
-for i in range(5):
-    num[i]=int(input())
-    sum+=num[i]
+for i in range(5): # i에 0부터 5가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+    num[i]=int(input()) # 사용자로부터 정수 입력받아 num[i]에 대입하기
+    sum+=num[i] # sum에 sum+num[i]의 값 대입하기
 
-num.sort()
+num.sort() # 리스트 num 정렬하기
     
-print(int(sum/5))
+print(int(sum/5)) # 
 print(num[2])
