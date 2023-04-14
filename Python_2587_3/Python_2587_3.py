@@ -17,7 +17,7 @@ for i in range(5): # i에 0부터 5가 되기 전까지 1씩 증가시킨 값을
     num[i]=int(input()) # 사용자로부터 정수 입력받아 num[i]에 대입하기
     sum+=num[i] # sum에 sum+num[i]의 값 대입하기
 
-num.sort() # 리스트 num 정렬하기
+num.sort() # 리스트 num 오름차순 정렬하기
     
-print(int(sum/5)) # 평균 정수형으로 출력하기
-print(num[2]) 
+print(int(sum/5)) # 평균을 정수형으로 출력하기
+print(num[2]) # 중앙값 출력하기
