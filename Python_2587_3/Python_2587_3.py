@@ -19,5 +19,5 @@ for i in range(5): # i에 0부터 5가 되기 전까지 1씩 증가시킨 값을
 
 num.sort() # 리스트 num 정렬하기
     
-print(int(sum/5)) # 
-print(num[2])
+print(int(sum/5)) # 평균 정수형으로 출력하기
+print(num[2]) 
