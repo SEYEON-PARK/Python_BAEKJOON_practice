@@ -6,3 +6,9 @@
 
 각 테스트 케이스에 대해서 주어진 문자열의 첫 글자와 마지막 글자를 연속하여 출력한다.
 '''
+
+N=int(input())
+
+for i in range(N):
+    string=input()
+    print(string[0]+string[-1])
