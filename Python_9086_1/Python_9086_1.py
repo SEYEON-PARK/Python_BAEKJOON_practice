@@ -11,4 +11,4 @@ N=int(input()) # 사용자로부터 정수 입력받기
 
 for i in range(N): # 0부터 N-1까지 1씩 증가한 값을 i에 대입하며 반복
     string=input() # 사용자로부터 문자열 입력받기
-    print(string[0]+string[-1])
+    print(string[0]+string[-1]) # 결과 출력하기
