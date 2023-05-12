@@ -12,4 +12,4 @@ result=1 # 결과를 저장할 변수 선언 및 초기화
 for i in range(1, N+1): # 1부터 N+1이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
     result*=i # result에 result*i의 값을 대입하며 반복
 
-print(result)
+print(result) # 결과 출력하기
