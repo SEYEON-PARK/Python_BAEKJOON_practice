@@ -5,3 +5,10 @@
 
 첫째 줄에 N!을 출력한다.
 '''
+def fac(n):
+    if n==0:
+        return 1
+    return n*fac(n-1)
+
+N=int(input())
+print(fac(N))
