@@ -5,9 +5,9 @@
 
 첫째 줄에 N!을 출력한다.
 '''
-def fac(n):
-    if n==0:
-        return 1
+def fac(n): # 팩토리얼 함수 선언
+    if n==0: # 만약, n이 0과 같다면
+        return 1 # 1 반환하기
     return n*fac(n-1)
 
 N=int(input())
