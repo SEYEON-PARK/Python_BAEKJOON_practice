@@ -6,9 +6,9 @@
 첫째 줄에 N!을 출력한다.
 '''
 
-def fac(n):
-    if n<=1:
-        return 1
+def fac(n): # 함수 fac(n) 선언
+    if n<=1: # 만약, n이 1보다 작거나 같다면
+        return 1 # 1 반환하기
     return n*fac(n-1)
 
 N=int(input())
