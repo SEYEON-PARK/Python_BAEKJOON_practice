@@ -9,7 +9,7 @@
 def fac(n): # 함수 fac(n) 선언
     if n<=1: # 만약, n이 1보다 작거나 같다면
         return 1 # 1 반환하기
-    return n*fac(n-1)
+    return n*fac(n-1) # n*fac(n-1) 반환하기
 
-N=int(input())
-print(fac(N))
+N=int(input()) # 사용자로부터 정수 입력받기
+print(fac(N)) # 결과 출력하기
