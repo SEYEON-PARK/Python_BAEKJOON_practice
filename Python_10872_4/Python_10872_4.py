@@ -12,4 +12,4 @@ def fac(n): # 함수 fac(n) 선언
     return n*fac(n-1) # n*fac(n-1) 반환하기
 
 N=int(input()) # 사용자로부터 정수 입력받기
-print(fac(N)) # 결과 출력하기
+print(fac(N)) # 결과(팩토리얼 반환 값) 출력하기
