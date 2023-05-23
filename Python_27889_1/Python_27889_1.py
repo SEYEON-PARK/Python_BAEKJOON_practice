@@ -17,6 +17,6 @@ shortName=['NLCS', 'BHA', 'KIS', 'SJA'] # 약칭을 리스트 shortName에 저�
 longName=['North London Collegiate School', 'Branksome Hall Asia', 'Korea International School', 'St. Johnsbury Academy'] # 정식 명칭 리스트 longName에 저장하기
 
 for i in shortName: # 리스트 shortName에 있는 요소들을 하나씩 i에 대입하며 반복
-    if i==S: 
-        print(longName[shortName.index(i)])
-        break
+    if i==S: # 만약, i와 S가 같다면
+        print(longName[shortName.index(i)]) # 정식 명칭 출력하기
+        break # 반복문 빠져 나가기
