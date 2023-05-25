@@ -12,7 +12,7 @@ GEC에는 여러 학교가 있다. 각 학교의 약칭과 정식 명칭은 다�
 첫 번째 줄에 입력된 학교의 정식 명칭을 출력한다.
 """
 
-S=input()
+S=input() # 사용자로부터 문자열 입력받기
 shortName=['NLCS', 'BHA', 'KIS', 'SJA']
 longName=['North London Collegiate School', 'Branksome Hall Asia', 'Korea International School', 'St. Johnsbury Academy']
 
