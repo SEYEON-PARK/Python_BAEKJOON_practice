@@ -6,3 +6,7 @@
 
 입력받은 그대로 출력한다.
 '''
+
+import sys
+s = sys.stdin.read()
+print(s)
