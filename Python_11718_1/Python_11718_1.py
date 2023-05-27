@@ -7,6 +7,6 @@
 입력받은 그대로 출력한다.
 '''
 
-import sys # sys 라이브러리 추가!
+import sys # sys 모듈 추가!
 s = sys.stdin.read() # 쭉 입력받기
-print(s)
+print(s) # 출력하기
