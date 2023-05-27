@@ -7,6 +7,6 @@
 입력받은 그대로 출력한다.
 '''
 
-import sys
-s = sys.stdin.read()
+import sys # sys 라이브러리 추가!
+s = sys.stdin.read() # 쭉 입력받기
 print(s)
