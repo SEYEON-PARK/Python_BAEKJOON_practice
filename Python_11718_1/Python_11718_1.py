@@ -8,5 +8,5 @@
 '''
 
 import sys # sys 모듈 추가!
-s = sys.stdin.read() # 쭉 입력받기
-print(s) # 출력하기
+s = sys.stdin.read() # 띄어쓰기, 엔터 키 상관없이 쭉 입력받기
+print(s) # 결과 출력하기
