@@ -14,5 +14,5 @@ MenOfPassion 알고리즘은 다음과 같다.
 """
 
 n=input() # 사용자로부터 문자열 입력받기
-print(1) 
+print(1) # 1 출력하기
 print(0)
