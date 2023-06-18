@@ -10,5 +10,5 @@
 N=int(input()) # 사용자로부터 정수 입력받기
 
 for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
-    A, B=map(int, input().split())
+    A, B=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
     print("Case #"+str(i+1)+": "+str(A)+" + "+str(B)+" = "+str(A+B))
