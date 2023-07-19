@@ -29,9 +29,9 @@ if(s=="fdsajkl;" or s=="jkl;fdsa"): # 만약, s가 "fdsajkl;"와 같거나 "jkl;
     print("in-out") # "in-out" 출력하기
 elif(s== "asdf;lkj" or s== ";lkjasdf"): # 위의 조건과 맞지 않고 만약, s가 "asdf;lkj"와 같거나 ";lkjasdf"와 같다면
     print("out-in") # "out-in" 출력하기
-elif(s== "asdfjkl;"):
-    print("stairs")
-elif(s== ";lkjfdsa"):
-    print("reverse")
-else:
-    print("molu")
+elif(s== "asdfjkl;"): # 위의 조건들과 맞지 않고 만약, s가 "asdfjkl;"와 같다면
+    print("stairs") # "stairs" 출력하기
+elif(s== ";lkjfdsa"): # 위의 조건들과 맞지 않고 만약, s가 ";lkjfdsa"와 같다면
+    print("reverse") # "reverse" 출력하기
+else: # 위의 조건들과 맞지 않다면
+    print("molu") # "molu" 출력하기
