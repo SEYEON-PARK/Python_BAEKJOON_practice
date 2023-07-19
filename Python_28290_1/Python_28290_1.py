@@ -23,7 +23,7 @@ asdfjkl;
   만약 입력이 안밖, 밖안, 계단, 역계단 중 하나도 아니라면 "molu"를 출력한다.
 '''
 
-s=input()
+s=input() # 사용자로부터 문자열 입력받기
 
 if(s=="fdsajkl;" or s=="jkl;fdsa"):
     print("in-out")
