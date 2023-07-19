@@ -25,10 +25,10 @@ asdfjkl;
 
 s=input() # 사용자로부터 문자열 입력받기
 
-if(s=="fdsajkl;" or s=="jkl;fdsa"):
-    print("in-out")
-elif(s== "asdf;lkj" or s== ";lkjasdf"):
-    print("out-in")
+if(s=="fdsajkl;" or s=="jkl;fdsa"): # 만약, s가 "fdsajkl;"와 같거나 "jkl;fdsa"와 같다면
+    print("in-out") # "in-out" 출력하기
+elif(s== "asdf;lkj" or s== ";lkjasdf"): # 위의 조건과 맞지 않고 만약, s가 "asdf;lkj"와 같거나 ";lkjasdf"와 같다면
+    print("out-in") # "out-in" 출력하기
 elif(s== "asdfjkl;"):
     print("stairs")
 elif(s== ";lkjfdsa"):
