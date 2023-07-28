@@ -14,10 +14,10 @@
 
 N, M=map(int, input().split()) # 사용자로부터 정수 두 개 입력받기
 
-one=[] // 리스트 one 선언
+one=[] # 리스트 one 선언
 
-for i in range(N):
-    one.append(i+1)
+for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+    one.append(i+1) # i+1의 값을 리스트 one에 추가
 
 for j in range(M):
     a, b=map(int, input().split())
