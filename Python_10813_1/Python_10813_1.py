@@ -12,9 +12,9 @@
 1번 바구니부터 N번 바구니에 들어있는 공의 번호를 공백으로 구분해 출력한다.
 '''
 
-N, M=map(int, input().split())
+N, M=map(int, input().split()) # 사용자로부터 정수 두 개 입력받기
 
-one=[]
+one=[] // 리스트 one 선언
 
 for i in range(N):
     one.append(i+1)
