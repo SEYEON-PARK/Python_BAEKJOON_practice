@@ -19,11 +19,11 @@ one=[] # 리스트 one 선언
 for i in range(N): # 0부터 N이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
     one.append(i+1) # i+1의 값을 리스트 one에 추가
 
-for j in range(M):
-    a, b=map(int, input().split())
+for j in range(M): # 0부터 M이 되기 전까지 1씩 증가시킨 값을 j에 대입하며 반복
+    a, b=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
     change=one[a-1]
     one[a-1]=one[b-1]
-    one[b-1]=change
+    one[b-1]=change # 두 요소의 값 바꾸기
     
-for i in one:
-    print(i, end=' ')
+for i in one: # 리스트 one 안에 있는 요소들을 하나씩 i에 대입하며 반복
+    print(i, end=' ') # 결과 출력하기
