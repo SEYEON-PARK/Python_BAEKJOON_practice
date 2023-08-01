@@ -8,3 +8,11 @@
 
 상을 받는 커트라인을 출력하라.
 """
+
+N, k=map(int, input().split())
+score=input()
+
+arr = list(map(int, score.split()))
+arr.sort()
+
+print(arr[-k])
