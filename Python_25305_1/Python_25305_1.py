@@ -9,10 +9,10 @@
 상을 받는 커트라인을 출력하라.
 """
 
-N, k=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
+N, k=map(int, input().split()) # 사용자로부터 두 개의 정수(응시자의 수, 상을 받는 사람의 수) 입력받기
 score=input() # 문자열 입력받아 score에 저장하기
 
 arr = list(map(int, score.split())) # 문자열 score을 공백을 기준으로 잘라 정수형으로 형변환한 후 리스트 arr에 저장하기
 arr.sort() # 리스트 arr 오름차순 정렬하기
 
-print(arr[-k])
+print(arr[-k]) # 결과(커트라인) 출력하기
