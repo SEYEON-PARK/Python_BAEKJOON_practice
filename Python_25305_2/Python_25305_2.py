@@ -11,7 +11,7 @@
 
 N, k=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
 arr = list(map(int, input().split())) # 사용자로부터 문자열을 입력받아 공백을 기준으로 자른 후, 정수형으로 형변환하여 리스트 arr에 저장하기
-arr = sorted(arr)
+arr = sorted(arr) # 리스트 arr를 오름차순 정렬하기
 
 print(arr[-k])
 
