@@ -9,8 +9,8 @@
 상을 받는 커트라인을 출력하라.
 '''
 
-N, k=map(int, input().split())
-arr = list(map(int, input().split()))
-arr.sort(reverse=True)
+N, k=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
+arr = list(map(int, input().split())) # 사용자로부터 문자열을 입력받아 공백으로 자른 후, 정수형으로 형변환하여 리스트 arr에 저장
+arr.sort(reverse=True) 
 
 print(arr[k-1])
