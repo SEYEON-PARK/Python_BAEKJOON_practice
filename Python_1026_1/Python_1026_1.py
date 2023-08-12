@@ -10,3 +10,17 @@ N은 50보다 작거나 같은 자연수이고, A와 B의 각 원소는 100보�
 
 첫째 줄에 S의 최솟값을 출력한다.
 '''
+
+N = int(input())
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+A.sort()
+B.sort(reverse=True)
+
+sum=0
+
+for i in range(N):
+    sum+=A[i]*B[i]
+
+print(sum)
