@@ -15,12 +15,12 @@ N = int(input()) # 사용자로부터 정수 입력받기
 A = list(map(int, input().split())) # 사용자로부터 문자열을 입력받아 공백을 기준으로 자른 뒤, 정수형으로 형변환하고 리스트 A에 저장하기
 B = list(map(int, input().split()))
 
-A=sorted(A)
-B=sorted(B, reverse=True)
+A=sorted(A) # 리스트 A를 오름차순으로 정렬한 걸 A에 대입하기
+B=sorted(B, reverse=True) # 리스트 B를 내림차순한 걸 B에 대입하기
 
-sum=0
+sum=0 # 결과를 저장할 변수 sum 선언 및 초기화
 
-for i in range(N):
+for i in range(N): # 0부터 N이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
     sum+=A[i]*B[i]
 
 print(sum)
