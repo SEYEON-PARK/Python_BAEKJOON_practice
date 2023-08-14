@@ -16,7 +16,7 @@ A = list(map(int, input().split())) # 사용자로부터 문자열을 입력받�
 B = list(map(int, input().split())) # 사용자로부터 문자열을 입력받아 공백을 기준으로 자른 뒤, 정수형으로 형변환하고 리스트 B에 저장하기
 
 A=sorted(A) # 리스트 A를 오름차순으로 정렬한 걸 A에 대입하기
-B=sorted(B, reverse=True) # 리스트 B를 내림차순한 걸 B에 대입하기
+B=sorted(B, reverse=True) # 리스트 B를 내림차순으로 정렬한 걸 B에 대입하기
 
 sum=0 # 결과를 저장할 변수 sum 선언 및 초기화
 
