@@ -16,9 +16,9 @@ A = list(map(int, input().split())) # 문자열을 입력받아 공백을 기준
 B = list(map(int, input().split()))
 
 A.sort(reverse=True) # 리스트 A를 내림차순으로 정렬
-B.sort()
+B.sort() # 리스트 B를 오름차순으로 정렬
 
-sum=0
+sum=0 # 결과를 저장할 변수 sum 선언 및 0으로 초기화
 
 for i in range(N):
     sum+=A[i]*B[i]
