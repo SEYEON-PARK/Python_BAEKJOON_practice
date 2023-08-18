@@ -10,7 +10,7 @@
 
 A, B, C=map(int, input().split()) # 사용자로부터 세 개의 정수 입력받기
 
-print((A+B)%C)
-print(((A%C) + (B%C))%C)
+print((A+B)%C) # (A+B)%C의 값 출력하기
+print(((A%C) + (B%C))%C) # ((A%C) + (B%C))%C의 값 출력하기
 print((A*B)%C)
 print(((A%C) * (B%C))%C)
