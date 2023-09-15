@@ -9,3 +9,12 @@
 
 각 줄에 각 테스트케이스에서 사전상 가장 앞서는 단어를 출력한다.
 '''
+
+num=int(input())
+while(num!=0):
+    li=[]
+    for i in range(num):
+        li.append(input())
+    li.sort(key=str.lower)
+    print(li[0])
+    num=int(input())
