@@ -13,8 +13,8 @@
 num=int(input()) # 사용자로부터 정수 입력받기
 while(num!=0): # 만약, num이 0이 아니라면 계속 반복
     li=[] # 리스트 li 선언
-    for i in range(num):
-        li.append(input())
-    li.sort(key=str.lower)
-    print(li[0])
-    num=int(input())
+    for i in range(num): # i에 0부터 num이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+        li.append(input()) # 사용자로부터 문자열 입력받아 리스트 li에 추가
+    li.sort(key=str.lower) # 대소문자 구분없이 리스트 li 오름차순 정렬(기존 배열 내용은 바꾸지 않으면서 모두 소문자로 바꾸어 비교한다.)
+    print(li[0]) # 결과 출력하기
+    num=int(input()) # 사용자로부터 정수 입력받기
