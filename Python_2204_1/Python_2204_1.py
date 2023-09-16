@@ -10,9 +10,9 @@
 각 줄에 각 테스트케이스에서 사전상 가장 앞서는 단어를 출력한다.
 '''
 
-num=int(input())
-while(num!=0):
-    li=[]
+num=int(input()) # 사용자로부터 정수 입력받기
+while(num!=0): # 만약, num이 0이 아니라면 계속 반복
+    li=[] # 리스트 li 선언
     for i in range(num):
         li.append(input())
     li.sort(key=str.lower)
