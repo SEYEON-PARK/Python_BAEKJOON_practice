@@ -14,3 +14,24 @@
 
 각 줄에 날짜에 해당하는 날의 수를 출력한다.
 '''
+
+month_list=[0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+day, mon, year=map(int, input().split())
+def sum(month):
+    result=0
+    for i in range(1, month):
+        result+=month_list[i]       
+    return result
+
+while(day!=0 or mon !=0 or year!=0):
+    special_day=0
+    if(mon>=3 and year%4==0):
+        if(year%100==0):
+            special_day=0
+            if(year%400==0):
+                special_day=1
+        else:
+            special_day=1
+            
+    print(sum(mon)+day+special_day)
+    day, mon, year=map(int, input().split())
