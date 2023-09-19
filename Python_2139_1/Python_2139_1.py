@@ -17,21 +17,23 @@
 
 month_list=[0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31] # 월별 날 수 저장한 리스트
 day, mon, year=map(int, input().split()) # 사용자로부터 일, 월, 년 입력받기
-def sum(month): # 이전 달까지의 일수 계산해주는 함수 선언(평년 기준)
+
+# 이전 달까지의 일수 계산해주는 함수 선언(평년 기준)
+def sum(month): 
     result=0
     for i in range(1, month):
         result+=month_list[i]       
     return result
 
 while(day!=0 or mon !=0 or year!=0): # day가 0이 아니거나 mon이 0이 아니거나 year가 0이 아니라면 계속 반복
-    special_day=0
-    if(mon>=3 and year%4==0):
-        if(year%100==0): # 평년인 경우
-            special_day=0
-            if(year%400==0): # 윤년인 경우
+    special_day=0 # special_day에 0 대입하기
+    if(mon>=3 and year%4==0): # mon이 3 이상이고(그래야 평년, 윤년이 의미가 있다.) year가 4로 나누어떨어진다면
+        if(year%100==0): # year가 100으로도 나누어떨어진다면(평년인 경우)
+            special_day=0 # special_day에 0 대입하기
+            if(year%400==0): # year가 400으로도 나누어떨어진다면(윤년인 경우)
                 special_day=1 # special_day에 1 대입하기
-        else:
-            special_day=1
+        else: # year가 100으로는 나누어떨어지지 않는다면(윤년인 경우)
+            special_day=1 # special_day에 1 대입하기
             
-    print(sum(mon)+day+special_day)
-    day, mon, year=map(int, input().split())
+    print(sum(mon)+day+special_day) # 결과(해당하는 날의 수) 출력하기
+    day, mon, year=map(int, input().split()) # 사용자로부터 다시 입력받기
