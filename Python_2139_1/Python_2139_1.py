@@ -23,13 +23,13 @@ def sum(month): # 이전 달까지의 일수 계산해주는 함수 선언(평�
         result+=month_list[i]       
     return result
 
-while(day!=0 or mon !=0 or year!=0):
+while(day!=0 or mon !=0 or year!=0): # day가 0이 아니거나 mon이 0이 아니거나 year가 0이 아니라면 계속 반복
     special_day=0
     if(mon>=3 and year%4==0):
-        if(year%100==0):
+        if(year%100==0): # 평년인 경우
             special_day=0
-            if(year%400==0):
-                special_day=1
+            if(year%400==0): # 윤년인 경우
+                special_day=1 # special_day에 1 대입하기
         else:
             special_day=1
             
