@@ -15,9 +15,9 @@
 각 줄에 날짜에 해당하는 날의 수를 출력한다.
 '''
 
-month_list=[0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-day, mon, year=map(int, input().split())
-def sum(month):
+month_list=[0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31] # 월별 날 수 저장한 리스트
+day, mon, year=map(int, input().split()) # 사용자로부터 일, 월, 년 입력받기
+def sum(month): # 이전 달까지의 일수 계산해주는 함수 선언(평년 기준)
     result=0
     for i in range(1, month):
         result+=month_list[i]       
