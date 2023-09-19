@@ -10,3 +10,15 @@
 
 첫째 줄에 거절당하는 사람의 수를 출력한다.
 '''
+
+num=int(input())
+rejectCount=0
+countingList=[0 for i in range(101)]
+
+li=list(map(int, input().split()))
+for i in li:
+    countingList[i]+=1
+    if(countingList[i]>1):
+        rejectCount+=1
+
+print(rejectCount)
