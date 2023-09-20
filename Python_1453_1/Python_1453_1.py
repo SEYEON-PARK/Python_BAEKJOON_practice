@@ -11,9 +11,9 @@
 첫째 줄에 거절당하는 사람의 수를 출력한다.
 '''
 
-num=int(input())
-rejectCount=0
-countingList=[0 for i in range(101)]
+num=int(input()) # 사용자로부터 정수 입력받기
+rejectCount=0 # 거절 횟수 저장할 변수 선언 및 초기화
+countingList=[0 for i in range(101)] # countingList의 요소를 101개 만들고 전부 0으로 초기화
 
 li=list(map(int, input().split()))
 for i in li:
