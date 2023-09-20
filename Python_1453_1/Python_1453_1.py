@@ -15,7 +15,7 @@ num=int(input()) # 사용자로부터 정수 입력받기
 rejectCount=0 # 거절 횟수 저장할 변수 선언 및 초기화
 countingList=[0 for i in range(101)] # countingList의 요소를 101개 만들고 전부 0으로 초기화
 
-li=list(map(int, input().split())) # 사용자로부터 입력받은 수를 리스트 li에 저장
+li=list(map(int, input().split())) # 사용자로부터 입력받은 문자열을 공백을 기준으로 자른 후, 정수형으로 형변환하여 리스트 li에 저장
 for i in li: # 리스트 li에 있는 요소들을 하나씩 i에 대입하며 반복
     countingList[i]+=1 # countingList[i]에 countingList[i]+1의 값 대입하기
     if(countingList[i]>1): # 만약, countingList[i]의 값이 1보다 크다면
