@@ -9,3 +9,22 @@ N과 K가 주어지면 (N, K)-요세푸스 순열을 구하는 프로그램을 �
 
 예제와 같이 요세푸스 순열을 출력한다.
 '''
+
+N, K=map(int, input().split())
+originalList=[]
+resultList=[]
+index=K-1
+
+for i in range(N):
+    originalList.append(i+1);
+
+for i in range(N):
+    resultList.append(originalList.pop(index))
+    if(len(originalList)==0):
+        break
+    index = (index + (K-1)) % len(originalList)
+
+print("<", end="")
+for i in range(N-1):
+    print(resultList[i], ", ", sep="", end="")
+print(resultList[N-1], ">", sep="")
