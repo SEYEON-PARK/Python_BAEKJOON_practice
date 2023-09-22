@@ -11,20 +11,20 @@ N과 K가 주어지면 (N, K)-요세푸스 순열을 구하는 프로그램을 �
 '''
 
 N, K=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
-originalList=[] # 원본 리스트
-resultList=[] # 결과 리스트
+originalList=[] # 원본 리스트(originalList)
+resultList=[] # 결과 리스트(resultList)
 index=K-1 # 인덱스 번호 저장할 변수 선언 및 초기화
 
 for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     originalList.append(i+1); # origianlList에 i+1의 값을 하나씩 추가하기
 
-for i in range(N):
-    resultList.append(originalList.pop(index))
-    if(len(originalList)==0):
-        break
-    index = (index + (K-1)) % len(originalList)
+for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+    resultList.append(originalList.pop(index)) # resultList에 originalList의 index번째 값을 빼서 추가
+    if(len(originalList)==0): # 만약, originalList의 길이가 0과 같다면
+        break # 반복문 빠져 나오기
+    index = (index + (K-1)) % len(originalList) # index에 (index + (K-1)) % len(originalList)의 값 대입하기
 
-print("<", end="")
-for i in range(N-1):
-    print(resultList[i], ", ", sep="", end="")
-print(resultList[N-1], ">", sep="")
+print("<", end="") # 출력 형식대로 "<" 출력하기
+for i in range(N-1): # i에 0부터 (N-1)이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+    print(resultList[i], ", ", sep="", end="") # resultList에 있는 값을 하나씩 출력하기
+print(resultList[N-1], ">", sep="") # resultList에 있는 마지막 값을 출력하고, ">"도 출력하기
