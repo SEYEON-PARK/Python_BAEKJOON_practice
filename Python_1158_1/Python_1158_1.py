@@ -26,5 +26,5 @@ for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을
 
 print("<", end="") # 출력 형식대로 "<" 출력하기
 for i in range(N-1): # i에 0부터 (N-1)이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
-    print(resultList[i], ", ", sep="", end="") # resultList에 있는 값을 하나씩 출력하기
+    print(resultList[i], ", ", sep="", end="") # resultList에 있는 값과 ", " 출력하기
 print(resultList[N-1], ">", sep="") # resultList에 있는 마지막 값을 출력하고, ">"도 출력하기
