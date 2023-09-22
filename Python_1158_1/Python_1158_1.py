@@ -16,7 +16,7 @@ resultList=[] # 결과 리스트
 index=K-1 # 인덱스 번호 저장할 변수 선언 및 초기화
 
 for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
-    originalList.append(i+1);
+    originalList.append(i+1); # origianlList에 i+1의 값을 하나씩 추가하기
 
 for i in range(N):
     resultList.append(originalList.pop(index))
