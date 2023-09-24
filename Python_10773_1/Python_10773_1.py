@@ -10,3 +10,19 @@
 
 재민이가 최종적으로 적어 낸 수의 합을 출력한다. 최종적으로 적어낸 수의 합은 (2의 31승)-1보다 작거나 같은 정수이다.
 """
+
+K=int(input())
+li=[]
+
+for i in range(K):
+    n=int(input())
+    if(n==0):
+        li.pop()
+    else:
+        li.append(n)
+    
+sum=0
+for i in li:
+    sum+=i
+    
+print(sum)
