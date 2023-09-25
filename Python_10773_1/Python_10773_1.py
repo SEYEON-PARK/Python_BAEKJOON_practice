@@ -18,11 +18,11 @@ for i in range(K): # i에 0부터 K가 되기 전까지 1씩 증가시킨 값을
     n=int(input()) # 사용자로부터 정수 입력받기
     if(n==0): # 만약, n이 0과 같다면
         li.pop() # 리스트 li의 마지막 요소 제거하기
-    else:
-        li.append(n)
+    else: # n이 0과 같지 않다면
+        li.append(n) # 리스트 li에 n 추가하기
     
-sum=0
-for i in li:
-    sum+=i
+sum=0 # 합을 저장할 변수 sum 선언 및 초기화
+for i in li: # 리스트 li의 요소들을 하나씩 i에 대입하며 반복
+    sum+=i # sum에 sum+i의 값 대입하기
     
-print(sum)
+print(sum) # 결과 출력하기
