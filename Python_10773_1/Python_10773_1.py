@@ -14,10 +14,10 @@
 K=int(input()) # 사용자로부터 정수 입력받기
 li=[] # 리스트 li 선언
 
-for i in range(K):
-    n=int(input())
-    if(n==0):
-        li.pop()
+for i in range(K): # i에 0부터 K가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+    n=int(input()) # 사용자로부터 정수 입력받기
+    if(n==0): # 만약, n이 0과 같다면
+        li.pop() # 리스트 li의 마지막 요소 제거하기
     else:
         li.append(n)
     
