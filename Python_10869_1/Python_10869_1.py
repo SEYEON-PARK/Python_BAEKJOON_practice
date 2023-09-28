@@ -6,7 +6,7 @@
 첫째 줄에 A+B, 둘째 줄에 A-B, 셋째 줄에 A*B, 넷째 줄에 A/B, 다섯째 줄에 A%B를 출력한다.
 '''
 
-A, B=map(int, input().split())
+A, B=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
 print(A+B)
 print(A-B)
 print(A*B)
