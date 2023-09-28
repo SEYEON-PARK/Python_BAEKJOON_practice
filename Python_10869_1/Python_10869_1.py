@@ -7,8 +7,8 @@
 '''
 
 A, B=map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
-print(A+B)
-print(A-B)
+print(A+B) # A+B의 값 출력하기
+print(A-B) # A-B의 값 출력하기
 print(A*B)
 print(A//B)
 print(A%B)
