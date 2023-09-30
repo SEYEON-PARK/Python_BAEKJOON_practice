@@ -7,4 +7,4 @@
 '''
 
 s=input() # 사용자로부터 문자열 입력받기
-print(len(s))
+print(len(s)) # 문자열의 길이 출력하기
