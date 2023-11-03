@@ -10,13 +10,13 @@ N이 주어졌을 때, 제일 마지막에 남게 되는 카드를 구하는 프
 첫째 줄에 남게 되는 카드의 번호를 출력한다.
 '''
 
-class Queue:
-    def __init__(self):
-        self.items = []
-        self.firstIdx = 0
+class Queue: # 큐 클래스 선언
+    def __init__(self): # 생성자
+        self.items = [] # 요소를 담을 리스트 self.items 선언
+        self.firstIdx = 0 # 첫 번째 요소의 인덱스를 나타낼 self.firstIdx 선언 및 0으로 초기화
     
-    def push(self, x):
-        self.items.append(x)
+    def push(self, x): # 큐에 추가해주는 역할의 push() 메소드
+        self.items.append(x) # 리스트 self.items의 맨 마지막에 x 추가
     
     def pop(self):
         self.firstIdx += 1
