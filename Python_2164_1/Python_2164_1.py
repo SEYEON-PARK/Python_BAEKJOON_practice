@@ -9,3 +9,33 @@ N이 주어졌을 때, 제일 마지막에 남게 되는 카드를 구하는 프
 
 첫째 줄에 남게 되는 카드의 번호를 출력한다.
 '''
+
+class Queue:
+    def __init__(self):
+        self.items = []
+        self.firstIdx = 0
+    
+    def push(self, x):
+        self.items.append(x)
+    
+    def pop(self):
+        self.firstIdx += 1
+        return self.items[self.firstIdx-1]
+    
+    def size(self):
+        return len(self.items) - self.firstIdx
+    
+    def oneLeft(self):
+        return self.pop()
+
+
+q=Queue()
+N = int(input())
+for i in range(1, N+1):
+    q.push(i)
+
+while q.size() > 1:
+    q.pop()
+    q.push(q.pop())
+
+print(q.oneLeft())
