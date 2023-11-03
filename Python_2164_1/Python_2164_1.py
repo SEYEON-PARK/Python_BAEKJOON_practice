@@ -18,7 +18,7 @@ class Queue: # 큐 클래스 선언
     def push(self, x): # 큐에 추가해주는 역할의 push() 메소드
         self.items.append(x) # 리스트 self.items의 맨 마지막에 x 추가
     
-    def pop(self): # 큐의 맨 처음 요소를 삭제하고 반환해주는 역할의 pop() 메소드
+    def pop(self): # 큐의 맨 앞 요소를 삭제하고 반환해주는 역할의 pop() 메소드
         self.firstIdx += 1 # self.firstIdx에 1 더하기
         return self.items[self.firstIdx-1] # 원래 첫 번째 요소였던 거를 반환하기
     
@@ -29,13 +29,13 @@ class Queue: # 큐 클래스 선언
         return self.pop() # 하나 반환하기
 
 
-q=Queue()
-N = int(input())
-for i in range(1, N+1):
-    q.push(i)
+q=Queue() # 클래스 Queue의 객체 q 생성
+N = int(input()) # 사용자로부터 정수 입력받기
+for i in range(1, N+1): # i에 1부터 N+1이 되기 전까지(N까지) N번 반복
+    q.push(i) # q에 차례로 넣기!
 
-while q.size() > 1:
-    q.pop()
-    q.push(q.pop())
+while q.size() > 1: # 만약, q.size()가 1보다 크다면
+    q.pop() # 맨 앞 요소 삭제하기
+    q.push(q.pop()) # 다음 맨 앞 요소를 q의 맨 마지막에 추가해주기
 
-print(q.oneLeft())
+print(q.oneLeft()) # 결과 출력하기
