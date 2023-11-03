@@ -31,7 +31,7 @@ class Queue: # 큐 클래스 선언
 
 q=Queue() # 클래스 Queue의 객체 q 생성
 N = int(input()) # 사용자로부터 정수 입력받기
-for i in range(1, N+1): # i에 1부터 N+1이 되기 전까지(N까지) N번 반복
+for i in range(1, N+1): # i에 1부터 N+1이 되기 전까지(N까지) 대입하며 N번 반복
     q.push(i) # q에 차례로 넣기!
 
 while q.size() > 1: # 만약, q.size()가 1보다 크다면
