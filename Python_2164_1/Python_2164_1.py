@@ -18,15 +18,15 @@ class Queue: # 큐 클래스 선언
     def push(self, x): # 큐에 추가해주는 역할의 push() 메소드
         self.items.append(x) # 리스트 self.items의 맨 마지막에 x 추가
     
-    def pop(self):
-        self.firstIdx += 1
-        return self.items[self.firstIdx-1]
+    def pop(self): # 큐의 맨 처음 요소를 삭제하고 반환해주는 역할의 pop() 메소드
+        self.firstIdx += 1 # self.firstIdx에 1 더하기
+        return self.items[self.firstIdx-1] # 원래 첫 번째 요소였던 거를 반환하기
     
-    def size(self):
-        return len(self.items) - self.firstIdx
+    def size(self): # 큐의 사이즈를 반환해주는 size() 메소드
+        return len(self.items) - self.firstIdx # (리스트 self.items의 길이) - (self.firstIdx)의 값 반환하기
     
-    def oneLeft(self):
-        return self.pop()
+    def oneLeft(self): # 하나가 남았을 때 사용하는 oneLeft() 메소드
+        return self.pop() # 하나 반환하기
 
 
 q=Queue()
