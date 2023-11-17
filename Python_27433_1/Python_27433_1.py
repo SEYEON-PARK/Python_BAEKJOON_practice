@@ -6,8 +6,8 @@
 첫째 줄에 N!을 출력한다.
 '''
 
-N=int(input())
-result=1
+N=int(input()) # 사용자로부터 정수 입력받기
+result=1 # 결과를 저장할 변수 result 선언 및 초기화
 
 for i in range(2, N+1):
     result*=i
