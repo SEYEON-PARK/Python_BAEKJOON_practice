@@ -6,8 +6,8 @@
 첫째 줄에 N!을 출력한다.
 '''
 
-def fac(N):
-    if N<=1:
+def fac(N): # 팩토리얼을 구해주는 함수 fac() 선언
+    if N<=1: # 만약, N이 1보다 작거나 같다면
         return 1
     else:
         return N * fac(N-1)
