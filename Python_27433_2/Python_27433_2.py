@@ -8,9 +8,9 @@
 
 def fac(N): # 팩토리얼을 구해주는 함수 fac() 선언
     if N<=1: # 만약, N이 1보다 작거나 같다면
-        return 1
-    else:
-        return N * fac(N-1)
+        return 1 # 1 반환하기
+    else: # N이 1보다 작거나 같지 않다면(크다면)
+        return N * fac(N-1) # N * fac(N-1)의 값 반환하기
     
 N=int(input())
 print(fac(N))
