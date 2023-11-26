@@ -19,4 +19,4 @@ while(N//4 != 0): # N을 4로 나눴을 때의 몫이 0과 같지 않다면
     print("long ", end="") # "long " 출력하기
     N-=4 # N에 N-4의 값 대입하기
     
-print("int")
+print("int") # "int" 출력하기
