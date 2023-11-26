@@ -15,8 +15,8 @@ C++ 책을 열심히 읽었던 혜아는 간단히 두 수를 더하는 코드�
 
 N = int(input()) # 사용자로부터 정수 입력받기
 
-while(N//4 != 0):
-    print("long ", end="")
-    N-=4
+while(N//4 != 0): # N을 4로 나눴을 때의 몫이 0과 같지 않다면
+    print("long ", end="") # "long " 출력하기
+    N-=4 # N에 N-4의 값 대입하기
     
 print("int")
