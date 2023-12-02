@@ -17,4 +17,4 @@ MenOfPassion(A[], n) {
 
 n = int(input()) // 사용자로부터 정수 입력받기
 print(n) // n의 값 출력하기
-print(1)
+print(1) // 1 출력하기
