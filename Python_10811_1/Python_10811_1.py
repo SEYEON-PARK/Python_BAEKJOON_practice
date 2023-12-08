@@ -17,9 +17,9 @@ bag = list() # 리스트 bag 선언
 for i in range(N): # 0부터 N이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
     bag.append(i+1) # 리스트 bag에 i+1의 값 추가하기
 
-for i in range(M):
-    a, b = map(int, input().split())
-    bag[a-1:b] = bag[a-1:b][::-1]
+for i in range(M): # 0부터 M이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
+    a, b = map(int, input().split()) # 사용자로부터 정수 2개 입력받기
+    bag[a-1:b] = bag[a-1:b][::-1] # 리스트 bag의 a-1부터 b가 되기 전까지의 인덱스 요소들을 역순으로 바꿔서 리스트 bag[a-1:b]에 대입하기
     
-for i in range(N):
-    print(bag[i], end=" ")
+for i in range(N): # 0부터 N이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
+    print(bag[i], end=" ") # 결과 출력하기
