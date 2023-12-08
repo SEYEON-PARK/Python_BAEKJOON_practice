@@ -14,8 +14,8 @@
 N, M = map(int, input().split()) # 사용자로부터 정수 2개 입력받기
 bag = list() # 리스트 bag 선언
 
-for i in range(N):
-    bag.append(i+1)
+for i in range(N): # 0부터 N이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
+    bag.append(i+1) # 리스트 bag에 i+1의 값 추가하기
 
 for i in range(M):
     a, b = map(int, input().split())
