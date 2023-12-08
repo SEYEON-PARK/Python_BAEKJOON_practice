@@ -11,8 +11,8 @@
 모든 순서를 바꾼 다음에, 가장 왼쪽에 있는 바구니부터 바구니에 적혀있는 순서를 공백으로 구분해 출력한다.
 '''
 
-N, M = map(int, input().split())
-bag = list()
+N, M = map(int, input().split()) # 사용자로부터 정수 2개 입력받기
+bag = list() # 리스트 bag 선언
 
 for i in range(N):
     bag.append(i+1)
