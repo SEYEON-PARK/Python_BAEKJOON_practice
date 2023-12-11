@@ -11,11 +11,11 @@
 모든 순서를 바꾼 다음에, 가장 왼쪽에 있는 바구니부터 바구니에 적혀있는 순서를 공백으로 구분해 출력한다.
 '''
 
-N, M = map(int, input().split())
-bag = list()
+N, M = map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
+bag = list() # 리스트 bag 선언
 
-for i in range(N):
-    bag.append(i+1)
+for i in range(N): # 0부터 N이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
+    bag.append(i+1) 
 
 for _ in range(M):
     a, b = map(int, input().split())
