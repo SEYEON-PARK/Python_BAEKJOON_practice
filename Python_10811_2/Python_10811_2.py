@@ -15,10 +15,10 @@ N, M = map(int, input().split()) # 사용자로부터 두 개의 정수 입력�
 bag = list() # 리스트 bag 선언
 
 for i in range(N): # 0부터 N이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
-    bag.append(i+1) 
+    bag.append(i+1) # i+1의 값을 리스트 bag에 추가
 
 for _ in range(M):
-    a, b = map(int, input().split())
+    a, b = map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
     bag[a-1:b] = bag[a-1:b][::-1]
     
 for i in range(N):
