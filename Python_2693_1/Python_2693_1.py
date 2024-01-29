@@ -8,7 +8,7 @@
 각 테스트 케이스에 대해 한 줄에 하나씩 배열 A에서 3번째 큰 값을 출력한다.
 '''
 
-n=int(input())
+n=int(input()) # 사용자로부터 정수 입력받기
 
 for i in range(n):
     A=list(map(int, input().split()))
