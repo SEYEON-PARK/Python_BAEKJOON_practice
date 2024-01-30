@@ -10,7 +10,7 @@
 
 n=int(input()) # 사용자로부터 정수 입력받기
 
-for i in range(n):
-    A=list(map(int, input().split()))
+for i in range(n): # 0부터 n보다 작을 때까지 1씩 증가시킨 값을 i에 대입하며 반복
+    A=list(map(int, input().split())) 
     A.sort(reverse=True)
     print(A[2])
