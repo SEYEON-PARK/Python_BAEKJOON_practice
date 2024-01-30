@@ -11,6 +11,6 @@
 n=int(input()) # 사용자로부터 정수 입력받기
 
 for i in range(n): # 0부터 n보다 작을 때까지 1씩 증가시킨 값을 i에 대입하며 반복
-    A=list(map(int, input().split())) 
-    A.sort(reverse=True)
-    print(A[2])
+    A=list(map(int, input().split())) # 사용자로부터 입력받은 걸 공백을 기준으로 잘라 정수형으로 형변환한 후, 리스트 A에 저장하기
+    A.sort(reverse=True) # 리스트 A를 내림차순으로 정렬하기
+    print(A[2]) # 세 번째로 큰 값 출력하기
