@@ -19,8 +19,8 @@ while(True): # 무한 반복
         break # 가장 가까운 반복문을 빠져 나오기
         
     if(a % b == 0): # 만약, a % b의 값이 0과 같다면
-        print("multiple") # "
-    elif(b % a == 0):
-        print("factor")
-    else:
-        print("neither")
+        print("multiple") # "multiple" 출력하기
+    elif(b % a == 0): # 만약 a % b의 값이 0과 같지 않고, b % a의 값이 0과 같다면
+        print("factor") # "factor" 출력하기
+    else: # a % b의 값이 0과 같지 않고, b % a의 값도 0과 같지 않다면
+        print("neither") # "neither" 출력하기
