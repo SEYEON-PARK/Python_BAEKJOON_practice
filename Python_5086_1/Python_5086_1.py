@@ -18,8 +18,8 @@ while(True): # 무한 반복
     if(a == 0 and b == 0): # 만약, a가 0이고 b도 0이라면
         break # 가장 가까운 반복문을 빠져 나오기
         
-    if(a % b == 0):
-        print("multiple")
+    if(a % b == 0): # 만약, a % b의 값이 0과 같다면
+        print("multiple") # "
     elif(b % a == 0):
         print("factor")
     else:
