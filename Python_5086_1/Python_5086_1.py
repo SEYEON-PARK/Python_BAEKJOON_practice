@@ -13,10 +13,10 @@
 각 테스트 케이스마다 첫 번째 숫자가 두 번째 숫자의 약수라면 factor를, 배수라면 multiple을, 둘 다 아니라면 neither를 출력한다.
 '''
 
-while(True):
-    a, b = map(int, input().split())
-    if(a == 0 and b == 0):
-        break
+while(True): # 무한 반복
+    a, b = map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
+    if(a == 0 and b == 0): # 만약, a가 0이고 b도 0이라면
+        break # 가장 가까운 반복문을 빠져 나오기
         
     if(a % b == 0):
         print("multiple")
