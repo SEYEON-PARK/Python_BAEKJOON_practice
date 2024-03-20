@@ -10,3 +10,15 @@
 
 각 후보에 대해, 칠판에 그려지게 되는 결과를 한 줄에 하나씩 출력한다.
 '''
+
+N = int(input())
+for i in range(N):
+    a = int(input())
+    while a // 5 != 0:
+        print("++++ ", end="")
+        a -= 5
+        
+    for j in range(a):
+        print("|", end="")
+        
+    print()
