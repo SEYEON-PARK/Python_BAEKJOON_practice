@@ -12,11 +12,11 @@
 '''
 
 N = int(input()) # 사용자로부터 정수 입력받기
-for i in range(N): // i에 0부터 N보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
-    a = int(input())
-    while a // 5 != 0:
-        print("++++ ", end="")
-        a -= 5
+for i in range(N): # i에 0부터 N보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
+    a = int(input()) # 사용자로부터 정수 입력받기
+    while a // 5 != 0: # 만약, a를 5로 나눴을 때의 몫이 0이 아니라면 계속 반복!
+        print("++++ ", end="") # "++++ " 출력하기
+        a -= 5 # a에 a-5의 값 대입하기
         
     for j in range(a):
         print("|", end="")
