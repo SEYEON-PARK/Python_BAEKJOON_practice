@@ -18,7 +18,7 @@ for i in range(N): # i에 0부터 N보다 작을 때까지 1씩 증가시킨 값
         print("++++ ", end="") # "++++ " 출력하기
         a -= 5 # a에 a-5의 값 대입하기
         
-    for j in range(a):
-        print("|", end="")
+    for j in range(a): # j에 0부터 a보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
+        print("|", end="") # "|" 출력하기
         
-    print()
+    print() # 한 줄 띄기
