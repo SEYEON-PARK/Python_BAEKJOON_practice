@@ -11,8 +11,8 @@
 각 후보에 대해, 칠판에 그려지게 되는 결과를 한 줄에 하나씩 출력한다.
 '''
 
-N = int(input())
-for i in range(N):
+N = int(input()) # 사용자로부터 정수 입력받기
+for i in range(N): // i에 0부터 N보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
     a = int(input())
     while a // 5 != 0:
         print("++++ ", end="")
