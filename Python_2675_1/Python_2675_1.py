@@ -8,3 +8,15 @@ QR Code "alphanumeric" 문자는 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\$%*+-./: �
 
 각 테스트 케이스에 대해 P를 출력한다.
 '''
+
+N = int(input())
+
+for i in range(N):
+    num, s = map(str, input().split())
+    num = int(num)
+    
+    for j in range(len(s)):
+        for k in range(num):
+            print(s[j], end="")
+    
+    print()
