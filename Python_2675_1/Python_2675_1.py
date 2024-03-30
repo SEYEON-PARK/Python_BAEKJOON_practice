@@ -11,9 +11,9 @@ QR Code "alphanumeric" 문자는 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\$%*+-./: �
 
 N = int(input()) # 사용자로부터 정수 입력받기
 
-for i in range(N): // 0부터 N이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
-    num, s = map(str, input().split())
-    num = int(num)
+for i in range(N): # 0부터 N이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
+    num, s = map(str, input().split()) # 사용자로부터 문자열 두 개를 공백을 기준으로 잘라 입력받기
+    num = int(num) # 첫 번째로 입력받은 문자열을 정수로 형변환하기
     
     for j in range(len(s)):
         for k in range(num):
