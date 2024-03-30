@@ -9,9 +9,9 @@ QR Code "alphanumeric" 문자는 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\$%*+-./: �
 각 테스트 케이스에 대해 P를 출력한다.
 '''
 
-N = int(input())
+N = int(input()) # 사용자로부터 정수 입력받기
 
-for i in range(N):
+for i in range(N): // 0부터 N이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
     num, s = map(str, input().split())
     num = int(num)
     
