@@ -11,7 +11,7 @@ H 時間 M 分が何分かを，単位 (分) を省いて出力せよ．
 '''
 
 H = int(input()) # 사용자로부터 정수 입력받기
-M = int(input())
-time = H*60 + M
+M = int(input()) # 사용자로부터 정수 입력받기
+time = H*60 + M # time에 계산한 값 대입하기
 
-print(time)
+print(time) # 결과 출력하기
