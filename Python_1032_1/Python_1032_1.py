@@ -20,13 +20,13 @@ result = list() # 리스트 result 선언
 for i in range(N): # i에 0부터 N보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
     li.append(input()) # 사용자로부터 문자열을 입력받아 리스트 li에 저장하기
     
-for i in range(len(li[0])): 
-    compareChar = li[0][i]
-    result.append(compareChar)
-    for j in range(1, N):
-        if(compareChar != li[j][i]):
-            result.pop()
-            result.append("?")
-            break
+for i in range(len(li[0])): # i에 0부터 문자열 li[0]의 길이보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
+    compareChar = li[0][i] # compareChar에 li[0][i]의 값 대입하기
+    result.append(compareChar) # 리스트 result에 compareChar 추가하기
+    for j in range(1, N): # j에 1부터 N보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
+        if(compareChar != li[j][i]): # 만약, compareChar이 li[j][i]와 같지 않다면(다른 문자열의 같은 자리 비교!)
+            result.pop() # 리스트 result의 마지막 요소 빼기
+            result.append("?") # 리스트 result에 "?" 추가하기 
+            break # 반복문 빠져 나오기
 
-print(''.join(result))
+print(''.join(result)) # 리스트 result의 요소들을 ''(빈 문자열)로 연결하여 출력하기 
