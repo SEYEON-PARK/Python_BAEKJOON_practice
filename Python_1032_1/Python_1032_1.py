@@ -13,9 +13,9 @@ N은 50보다 작거나 같은 자연수이고 파일 이름의 길이는 모두
 첫째 줄에 패턴을 출력하면 된다.
 '''
 
-N = int(input())
-li = list()
-result = list()
+N = int(input()) # 사용자로부터 정수 입력받기
+li = list() # 리스트 li 선언
+result = list() # 리스트 result 선언
 
 for i in range(N):
     li.append(input())
