@@ -17,10 +17,10 @@ N = int(input()) # 사용자로부터 정수 입력받기
 li = list() # 리스트 li 선언
 result = list() # 리스트 result 선언
 
-for i in range(N):
-    li.append(input())
+for i in range(N): # i에 0부터 N보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
+    li.append(input()) # 사용자로부터 문자열을 입력받아 리스트 li에 저장하기
     
-for i in range(len(li[0])):
+for i in range(len(li[0])): 
     compareChar = li[0][i]
     result.append(compareChar)
     for j in range(1, N):
