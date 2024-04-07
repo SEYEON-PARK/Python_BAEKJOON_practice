@@ -18,7 +18,7 @@ li = list() # 리스트 li 선언
 result = list() # 리스트 result 선언
 
 for i in range(N): # i에 0부터 N보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
-    li.append(input()) # 사용자로부터 문자열을 입력받아 리스트 li에 저장하기
+    li.append(input()) # 사용자로부터 문자열을 입력받아 리스트 li에 추가하기
     
 for i in range(len(li[0])): # i에 0부터 문자열 li[0]의 길이보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
     compareChar = li[0][i] # compareChar에 li[0][i]의 값 대입하기
