@@ -12,3 +12,21 @@ N은 50보다 작거나 같은 자연수이고 파일 이름의 길이는 모두
 
 첫째 줄에 패턴을 출력하면 된다.
 '''
+
+N = int(input())
+li = list()
+result = list()
+
+for i in range(N):
+    li.append(input())
+    
+for i in range(len(li[0])):
+    compareChar = li[0][i]
+    result.append(compareChar)
+    for j in range(1, N):
+        if(compareChar != li[j][i]):
+            result.pop()
+            result.append("?")
+            break
+
+print(''.join(result))
