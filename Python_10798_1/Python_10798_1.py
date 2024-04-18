@@ -25,11 +25,11 @@ Aa0aPAf985Bz1EhCz2W3D1gkD6x
 영석이가 세로로 읽은 순서대로 글자들을 출력한다. 이때, 글자들을 공백 없이 연속해서 출력한다. 
 '''
 
-stringList = list()
+stringList = list() # 리스트 stringList 생성
 
-for _ in range(5):
-    s = input()
-    stringList.append(s)
+for _ in range(5): # 0부터 4까지 5번 반복
+    s = input() # 사용자로부터 문자열 입력받기
+    stringList.append(s) # 리스트 stringList에 추가하기
 
 result = ""
 
