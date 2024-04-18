@@ -34,10 +34,10 @@ for _ in range(5): # 0부터 4까지 5번 반복
 result = "" # result 선언하고 빈 문자열로 초기화하기! 
 
 for i in range(15): # i에 0부터 15가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
-    for j in range(5):
-        try:
-            result += stringList[j][i]
-        except IndexError:
-            continue
+    for j in range(5): # j에 0부터 5가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+        try: # 우선 시도!
+            result += stringList[j][i] # result에 stringList[j][i]의 값 추가하기
+        except IndexError: # 만약, 인덱스 에러가 난다면
+            continue # 그냥 계속하기
             
-print(result)
+print(result) # 결과 출력하기
