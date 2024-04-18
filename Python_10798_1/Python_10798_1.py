@@ -31,9 +31,9 @@ for _ in range(5): # 0부터 4까지 5번 반복
     s = input() # 사용자로부터 문자열 입력받기
     stringList.append(s) # 리스트 stringList에 추가하기
 
-result = ""
+result = "" # result 선언하고 빈 문자열로 초기화하기! 
 
-for i in range(15):
+for i in range(15): # i에 0부터 15가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     for j in range(5):
         try:
             result += stringList[j][i]
