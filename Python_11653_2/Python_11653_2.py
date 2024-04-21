@@ -14,8 +14,7 @@ while(N != 1): # N이 1이 아니라면 계속 반복
             print(i) # i 출력하기
             N //= i # N에 N // i의 값 대입하기
             break # 가장 가까운 반복문 빠져 나가기
-        elif(i == N-1):
-            print(N)
-            N //= i
-            break
-            
+        elif(i == N-1): # 만약 N % i의 값이 0과 같지 않고, i가 N-1과 같다면
+            print(N) # N 출력하기
+            N //= i # N에 N // i의 값 대입하기
+            break # 가장 가까운 반복문 빠져 나가기
