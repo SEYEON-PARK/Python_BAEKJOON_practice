@@ -18,10 +18,10 @@
 첫째 줄에 최댓값을 출력하고, 둘째 줄에 최댓값이 위치한 행 번호와 열 번호를 빈칸을 사이에 두고 차례로 출력한다. 최댓값이 두 개 이상인 경우 그 중 한 곳의 위치를 출력한다.
 '''
 
-numList = [0]*9
+numList = [0]*9 # [0, 0, 0, 0, 0, 0, 0, 0, 0] 이런 형태의 리스트 만들기
 
-for i in range(9):
-    numList[i] = list(map(int, input().split()))
+for i in range(9): # i에 0부터 9가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+    numList[i] = list(map(int, input().split())) # 사용자가 입력한 한 줄을 공백을 기준으로 잘라 정수형으로 바꾼 뒤, 리스트로 만들어 numList[0]에 대입
         
 big = numList[0][0]
 indexI = 0;
