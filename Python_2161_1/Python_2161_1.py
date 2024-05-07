@@ -18,12 +18,12 @@ for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을
     
 choice = 0 # 변수(두 가지 경우 체크하는 용도) 선언 및 초기화
 count = 0 # 변수(출력 횟수 세는 용도) 선언 및 초기화
-while(count != N):
-    if(choice == 0):
-        choice = 1
-        print(li.pop(0), end=" ")
-        count += 1
-    else:
-        choice = 0
-        li.append(li.pop(0))
+while(count != N): # count가 N과 다르다면 계속 반복
+    if(choice == 0): # 만약, choice가 0과 같다면
+        choice = 1 # choice에 1 대입하기
+        print(li.pop(0), end=" ") # 리스트 li의 0번 인덱스 요소 빼고 출력하기
+        count += 1 # count에 1 더하기
+    else: # choice가 0과 다르다면
+        choice = 0 # choice에 0 대입하기
+        li.append(li.pop(0)) # 리스트 li의 0번 인덱스 요소 빼고 리스트 li의 맨 뒤에 추가하기
         
