@@ -16,8 +16,8 @@ N = int(input()) # 사용자로부터 정수 입력받기
 for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     li.append(i+1) # 리스트 li에 i+1의 값 대입하기
     
-choice = 0
-count = 0
+choice = 0 # 변수(두 가지 경우 체크하는 용도) 선언 및 초기화
+count = 0 # 변수(출력 횟수 세는 용도) 선언 및 초기화
 while(count != N):
     if(choice == 0):
         choice = 1
