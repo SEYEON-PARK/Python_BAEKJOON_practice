@@ -10,11 +10,11 @@ N이 주어졌을 때, 버린 카드들을 순서대로 출력하고, 마지막�
 첫째 줄에 버리는 카드들을 순서대로 출력한다. 제일 마지막에는 남게 되는 카드의 번호를 출력한다.
 '''
 
-li = list()
-N = int(input())
+li = list() # 리스트 li 생성
+N = int(input()) # 사용자로부터 정수 입력받기
 
-for i in range(N):
-    li.append(i+1)
+for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+    li.append(i+1) # 리스트 li에 i+1의 값 대입하기
     
 choice = 0
 count = 0
