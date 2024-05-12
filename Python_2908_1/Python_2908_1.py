@@ -10,10 +10,10 @@
 '''
 
 A, B = map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
-sangsuA = (A%10) * 100 + int((A%100) / 10) * 10 + int(A/100)
-sangsuB = (B%10) * 100 + int((B%100) / 10) * 10 + int(B/100)
+sangsuA = (A%10) * 100 + int((A%100) / 10) * 10 + int(A/100) # 변수 A(세 자리 수) 거꾸로 만들어 sangsuA에 대입!
+sangsuB = (B%10) * 100 + int((B%100) / 10) * 10 + int(B/100) # 변수 B(세 자리 수) 거꾸로 만들어 sangsuB에 대입!
 
-if(sangsuA > sangsuB):
-    print(sangsuA)
-else:
-    print(sangsuB)
+if(sangsuA > sangsuB): # 만약, sangsuA가 sangsuB보다 크다면
+    print(sangsuA) # sangsuA 출력하기
+else: # sangsuA가 sangsuB보다 크지 않다면
+    print(sangsuB) # sangsuB 출력하기
