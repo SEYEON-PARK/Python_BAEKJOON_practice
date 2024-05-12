@@ -9,7 +9,7 @@
 첫째 줄에 상수의 대답을 출력한다.
 '''
 
-A, B = map(int, input().split())
+A, B = map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
 sangsuA = (A%10) * 100 + int((A%100) / 10) * 10 + int(A/100)
 sangsuB = (B%10) * 100 + int((B%100) / 10) * 10 + int(B/100)
 
