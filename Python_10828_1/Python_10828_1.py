@@ -18,10 +18,10 @@ import sys; # sys.stdin.readline().rstrip()을 사용하기 위해
 N = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기(input()보다 빠르다!)
 stack = list() # 스택 역할을 할 리스트 stack 선언
 
-for i in range(N): 
-    command = sys.stdin.readline().rstrip().split()
-    if(command[0]=='push'):
-        stack.append(command[1])
+for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+    command = sys.stdin.readline().rstrip().split() # 사용자로부터 어떤 명령어를 실행할 것인지 입력받기
+    if(command[0]=='push'): # 만약, 명령어가 'push'라면
+        stack.append(command[1]) # stack의 끝에 원하는 요소 대입
     elif(command[0]=='pop'):
         if(len(stack)!=0):
             print(stack.pop())
