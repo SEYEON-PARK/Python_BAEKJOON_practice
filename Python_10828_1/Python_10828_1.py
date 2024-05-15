@@ -13,12 +13,12 @@
 출력해야하는 명령이 주어질 때마다, 한 줄에 하나씩 출력한다.
 '''
 
-import sys;
+import sys; # sys.stdin.readline().rstrip()을 사용하기 위해
 
-N = int(sys.stdin.readline().rstrip())
-stack = list()
+N = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기(input()보다 빠르다!)
+stack = list() # 스택 역할을 할 리스트 stack 선언
 
-for i in range(N):
+for i in range(N): 
     command = sys.stdin.readline().rstrip().split()
     if(command[0]=='push'):
         stack.append(command[1])
