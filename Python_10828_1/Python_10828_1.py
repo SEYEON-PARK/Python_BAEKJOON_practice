@@ -22,20 +22,20 @@ for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을
     command = sys.stdin.readline().rstrip().split() # 사용자로부터 어떤 명령어를 실행할 것인지 입력받기
     if(command[0]=='push'): # 만약, 명령어가 'push'라면
         stack.append(command[1]) # stack의 끝에 원하는 요소 대입
-    elif(command[0]=='pop'):
-        if(len(stack)!=0):
-            print(stack.pop())
-        else:
-            print('-1')
-    elif(command[0]=='size'):
-        print(len(stack))
-    elif(command[0]=='empty'):
-        if(len(stack)!=0):
-            print('0')
-        else:
-            print('1')
-    else:
-        if(len(stack)!=0):
-            print(stack[-1])
-        else:
-            print('-1')
+    elif(command[0]=='pop'): # 만약, 명령어가 앞에서 검사한 게 아니고 'pop'이라면
+        if(len(stack)!=0): # 만약, stack의 길이가 0이 아니라면
+            print(stack.pop()) # stack의 마지막 요소 빼고 출력하기
+        else: # stack의 길이가 0이라면
+            print('-1') # '-1' 출력하기
+    elif(command[0]=='size'): # 만약, 명령어가 앞에서 검사한 게 아니고 'size'라면
+        print(len(stack)) # stack의 길이 출력하기
+    elif(command[0]=='empty'): # 만약, 명령어가 앞에서 검사한 게 아니고 'empty'라면
+        if(len(stack)!=0): # 만약, stack의 길이가 0이 아니라면
+            print('0') # '0' 출력하기
+        else: # stack의 길이가 0이라면
+            print('1') # '1' 출력하기
+    else: # 명령어가 앞에서 검사한 것들이 전부 아니라면
+        if(len(stack)!=0): # 만약, stack의 길이가 0이 아니라면
+            print(stack[-1]) # stack의 마지막 요소 출력하기
+        else: # stack의 길이가 0이라면
+            print('-1') # '-1' 출력하기
