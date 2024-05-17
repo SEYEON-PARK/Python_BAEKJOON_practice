@@ -8,7 +8,7 @@ level, noon은 팰린드롬이고, baekjoon, online, judge는 팰린드롬이 �
 첫째 줄에 팰린드롬이면 1, 아니면 0을 출력한다.
 """
 
-import sys;
+import sys; // sys.stdin.readline().rstrip()를 사용하기 위해
 
 word = sys.stdin.readline().rstrip();
 front = 0
