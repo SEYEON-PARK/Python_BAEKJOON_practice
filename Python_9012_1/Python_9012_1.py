@@ -16,17 +16,17 @@ import sys # sys.stdin.readline().rstrip()을 사용하기 위해
 number = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기
 
 for _ in range(number): # number번 반복
-    brackets = sys.stdin.readline().rstrip()
-    stack = []
+    brackets = sys.stdin.readline().rstrip() # 사용자로부터 문자열을 입력받아 brackets에 저장
+    stack = [] # 스택 역할을 할 빈 리스트 stack 선언 
 
-    for bracket in brackets:
-        if bracket == '(':
-            stack.append(bracket)
-        else:
-            if stack and stack[-1] == '(':
-                stack.pop()
-            else:
-                print("NO")
-                break
-    else:
-        print("YES" if not stack else "NO")
+    for bracket in brackets: # brackets에 있는 요소들을 하나씩 bracket에 대입하며 반복
+        if bracket == '(': # 만약, bracket이 '('와 같다면
+            stack.append(bracket) # stack에 bracket을 추가하기!
+        else: # bracket이 '('와 같지 않다면
+            if stack and stack[-1] == '(': # 만약 stack이 비어있지 않고, stack의 맨 마지막 요소가 '('라면
+                stack.pop() # stack의 맨 마지막 요소 꺼내기!
+            else: # stack이 비어있거나, stack의 맨 마지막 요소가 '('가 아니라면
+                print("NO") # "NO" 출력하기
+                break # 가까운 반복문 빠져 나가기!
+    else: # 반복문이 break에 의해 중단되지 않고 정상적으로 종료되었다면
+        print("YES" if not stack else "NO") # 만약 stack이 비어 있다면 "YES"를, 그렇지 않다면 "NO"를 출력하기!
