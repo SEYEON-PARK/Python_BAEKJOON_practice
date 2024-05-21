@@ -10,3 +10,29 @@
 
 출력은 표준 출력을 사용한다. 만일 입력 괄호 문자열이 올바른 괄호 문자열(VPS)이면 “YES”, 아니면 “NO”를 한 줄에 하나씩 차례대로 출력해야 한다. 
 '''
+
+import sys;
+
+number = int(sys.stdin.readline().rstrip())
+
+for i in range(number):
+    brackets = sys.stdin.readline().rstrip()
+    openBracket = 0
+    closeBracket = 0
+    count =0
+    
+    for j in range(len(brackets)):
+        if(brackets[j] == '('):
+            openBracket += 1
+        elif(brackets[j] == ')'):
+            if(openBracket > closeBracket):
+                closeBracket += 1
+            else:
+                sys.stdout.write("NO\n")
+                break
+        count += 1
+                
+    if(openBracket == closeBracket and count == len(brackets)):
+        sys.stdout.write("YES\n")
+    elif(openBracket > closeBracket):
+        sys.stdout.write("NO\n")
