@@ -20,13 +20,13 @@ for _ in range(number): # number번 반복하기
     stack = [] # 스택 역할을 할 리스트 stack 생성
 
     for bracket in brackets: # brackets 안에 있는 괄호 문자들을 하나씩 bracket에 대입하며 반복
-        if bracket == '(':
-            stack.append(bracket)
-        else:
-            if stack and stack[-1] == '(':
-                stack.pop()
-            else:
-                sys.stdout.write("NO\n")
-                break
-    else:
-        sys.stdout.write("YES\n" if not stack else "NO\n")
+        if bracket == '(': # 만약, bracket이 '('와 같다면
+            stack.append(bracket) # stack 마지막에 bracket 추가하기
+        else: # bracket이 '('와 같지 않다면
+            if stack and stack[-1] == '(': # 만약 stack이 비어있지 않고, 마지막 요소가 '('와 같다면
+                stack.pop() # 마지막 요소 제거하기
+            else: # stack이 비어있거나, 마지막 요소가 '('와 같지 않다면
+                sys.stdout.write("NO\n") # "NO\n"를 출력하기(표준 출력 이용!)
+                break # 가장 가까운 반복문 빠져 나가기!
+    else: # 반복문이 중간에 break문으로 끝나지 않았다면
+        sys.stdout.write("YES\n" if not stack else "NO\n") # stack이 비어있으면 "YES\n" 출력하고, 아니라면 "NO\n" 출력하기
