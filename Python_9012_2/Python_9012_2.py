@@ -16,10 +16,10 @@ import sys # 표준 입출력을 이용하기 위해
 number = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기
 
 for _ in range(number): # number번 반복하기
-    brackets = sys.stdin.readline().rstrip()
-    stack = []
+    brackets = sys.stdin.readline().rstrip() # 사용자로부터 문자열(괄호) 입력받기
+    stack = [] # 스택 역할을 할 리스트 stack 생성
 
-    for bracket in brackets:
+    for bracket in brackets: # brackets 안에 있는 괄호 문자들을 하나씩 bracket에 대입하며 반복
         if bracket == '(':
             stack.append(bracket)
         else:
