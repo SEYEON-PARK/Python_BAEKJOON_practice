@@ -18,11 +18,11 @@ number = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력�
 for i in range(number): # number번 반복
     brackets = sys.stdin.readline().rstrip() # 사용자로부터 문자열 입력받기
     openBracket = 0 # 여는 괄호의 개수를 저장할 변수 openBracket 선언 및 초기화
-    closeBracket = 0 # 
-    count =0
+    closeBracket = 0 # 닫는 괄호의 개수를 저장할 변수 openBracket 선언 및 초기화
+    count = 0 # 반복 횟수를 저장할 변수 count 선언 및 초기화
     
-    for j in range(len(brackets)):
-        if(brackets[j] == '('):
+    for j in range(len(brackets)): # 0부터 문자열 brackets의 길이보다 작을 때까지 1씩 증가시킨 값을 j에 대입하며 반복 
+        if(brackets[j] == '('): # 만약, brackets[j]가 '('와 같다면
             openBracket += 1
         elif(brackets[j] == ')'):
             if(openBracket > closeBracket):
