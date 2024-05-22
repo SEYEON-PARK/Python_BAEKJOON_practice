@@ -11,14 +11,14 @@
 출력은 표준 출력을 사용한다. 만일 입력 괄호 문자열이 올바른 괄호 문자열(VPS)이면 “YES”, 아니면 “NO”를 한 줄에 하나씩 차례대로 출력해야 한다. 
 '''
 
-import sys;
+import sys; # 표준 입출력을 사용하기 위해
 
-number = int(sys.stdin.readline().rstrip())
+number = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기
 
-for i in range(number):
-    brackets = sys.stdin.readline().rstrip()
-    openBracket = 0
-    closeBracket = 0
+for i in range(number): # number번 반복
+    brackets = sys.stdin.readline().rstrip() # 사용자로부터 문자열 입력받기
+    openBracket = 0 # 여는 괄호의 개수를 저장할 변수 openBracket 선언 및 초기화
+    closeBracket = 0 # 
     count =0
     
     for j in range(len(brackets)):
