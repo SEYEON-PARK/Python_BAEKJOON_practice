@@ -23,16 +23,16 @@ for i in range(number): # number번 반복
     
     for j in range(len(brackets)): # 0부터 문자열 brackets의 길이보다 작을 때까지 1씩 증가시킨 값을 j에 대입하며 반복 
         if(brackets[j] == '('): # 만약, brackets[j]가 '('와 같다면
-            openBracket += 1
-        elif(brackets[j] == ')'):
-            if(openBracket > closeBracket):
-                closeBracket += 1
-            else:
-                sys.stdout.write("NO\n")
-                break
-        count += 1
+            openBracket += 1 # openBracket에 1 더하기
+        elif(brackets[j] == ')'): # 만약 brackets[j]가 '('와 같지 않고, ')'와 같다면
+            if(openBracket > closeBracket): # 만약, openBracket이 closeBracket보다 크다면(여는 괄호가 먼저 나왔어야 함)
+                closeBracket += 1 # closeBracket에 1 더하기
+            else: # openBracket이 closeBracket보다 크지 않다면(작거나 같다면)
+                sys.stdout.write("NO\n") # "NO\n" 출력하기
+                break # 가장 가까운 반복문 빠져 나가기
+        count += 1 # count에 1 더하기
                 
-    if(openBracket == closeBracket and count == len(brackets)):
-        sys.stdout.write("YES\n")
-    elif(openBracket > closeBracket):
-        sys.stdout.write("NO\n")
+    if(openBracket == closeBracket and count == len(brackets)): # 만약 openBracket과 closeBracket이 같고, count와 문자열 brackets의 길이가 같다면
+        sys.stdout.write("YES\n") # "YES\n" 출력하기
+    elif(openBracket > closeBracket): # 위의 조건과 안 맞고, openBracket이 closeBracket보다 크다면(여는 괄호가 더 많은 상황)
+        sys.stdout.write("NO\n") # "NO\n" 출력하기
