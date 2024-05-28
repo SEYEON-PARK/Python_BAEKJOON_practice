@@ -11,5 +11,5 @@
 첫째 줄에 답을 출력한다.
 '''
 
-N, M = map(int, input().split())
+N, M = map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
 print(N*M-1)
