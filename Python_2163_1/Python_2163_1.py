@@ -10,3 +10,6 @@
 
 첫째 줄에 답을 출력한다.
 '''
+
+N, M = map(int, input().split())
+print(N*M-1)
