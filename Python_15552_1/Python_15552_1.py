@@ -13,7 +13,7 @@ Python을 사용하고 있다면, input 대신 sys.stdin.readline을 사용할 �
 각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.
 '''
 
-import sys
+import sys # 표준 입출력을 사용하기 위해
 
 N = int(sys.stdin.readline().rstrip())
 for i in range(N):
