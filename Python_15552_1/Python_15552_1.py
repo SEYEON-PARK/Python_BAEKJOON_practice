@@ -13,7 +13,7 @@ Python을 사용하고 있다면, input 대신 sys.stdin.readline을 사용할 �
 각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.
 '''
 
-import sys # 표준 입출력을 사용하기 위해
+import sys # 표준 입력을 사용하기 위해
 
 N = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기
 for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
