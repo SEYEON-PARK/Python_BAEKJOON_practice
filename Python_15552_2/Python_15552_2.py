@@ -15,7 +15,7 @@ Python을 사용하고 있다면, input 대신 sys.stdin.readline을 사용할 �
 
 import sys # 표준 입출력을 사용하기 위해
 
-N = int(sys.stdin.readline().rstrip())
-for i in range(N):
-    A, B=map(int, sys.stdin.readline().rstrip().split())
-    sys.stdout.write(str(A+B) + '\n')
+N = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기
+for i in range(N): # i에 0부터 N보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
+    A, B=map(int, sys.stdin.readline().rstrip().split()) # 사용자로부터 두 개의 정수 입력받기
+    sys.stdout.write(str(A+B) + '\n') # 결과 출력하기!(표준 출력의 write 함수는 문자열만 출력할 수 있다! 따라서 형변환이 필수!)
