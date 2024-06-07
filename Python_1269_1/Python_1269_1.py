@@ -9,3 +9,16 @@
 
 첫째 줄에 대칭 차집합의 원소의 개수를 출력한다.
 '''
+
+import sys
+
+A, B = map(int, sys.stdin.readline().rstrip().split())
+numA = set(map(int, sys.stdin.readline().rstrip().split()))
+numB = list(map(int, sys.stdin.readline().rstrip().split()))
+result = A+B
+
+for i in range(B):
+    if(numB[i] in numA):
+        result -= 2
+
+print(result)
