@@ -13,12 +13,12 @@
 import sys # 표준 입력을 사용하기 위해
 
 A, B = map(int, sys.stdin.readline().rstrip().split()) # 사용자로부터 두 개의 정수 입력받기
-numA = set(map(int, sys.stdin.readline().rstrip().split())) // 사용자로부터 입력받은 문자열을 공백을 기준으로 잘라 int형으로 형변환한 후, set에 저장하여 numA에 대입
-numB = list(map(int, sys.stdin.readline().rstrip().split()))
-result = A+B
+numA = set(map(int, sys.stdin.readline().rstrip().split())) # 사용자로부터 입력받은 문자열을 공백을 기준으로 잘라 int형으로 형변환한 후, set에 저장하여 numA에 대입
+numB = list(map(int, sys.stdin.readline().rstrip().split())) # 사용자로부터 입력받은 문자열을 공백을 기준으로 잘라 int형으로 형변환한 후, list에 저장하여 numB에 대입
+result = A+B # result에 A+B의 값 대입하기
 
-for i in range(B):
-    if(numB[i] in numA):
-        result -= 2
+for i in range(B): # i에 0부터 B가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
+    if(numB[i] in numA): # 만약, numB[i]가 세트 numA 안에 있다면
+        result -= 2 # result에 result-2의 값 대입하기
 
-print(result)
+print(result) # 결과 출력하기!
