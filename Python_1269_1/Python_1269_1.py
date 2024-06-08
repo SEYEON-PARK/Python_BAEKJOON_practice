@@ -10,10 +10,10 @@
 첫째 줄에 대칭 차집합의 원소의 개수를 출력한다.
 '''
 
-import sys
+import sys # 표준 입력을 사용하기 위해
 
-A, B = map(int, sys.stdin.readline().rstrip().split())
-numA = set(map(int, sys.stdin.readline().rstrip().split()))
+A, B = map(int, sys.stdin.readline().rstrip().split()) # 사용자로부터 두 개의 정수 입력받기
+numA = set(map(int, sys.stdin.readline().rstrip().split())) // 사용자로부터 입력받은 문자열을 공백을 기준으로 잘라 int형으로 형변환한 후, set에 저장하여 numA에 대입
 numB = list(map(int, sys.stdin.readline().rstrip().split()))
 result = A+B
 
