@@ -16,14 +16,14 @@
 import sys # 표준 입출력을 사용하기 위해
 
 totalPrice = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기
-num = int(sys.stdin.readline().rstrip())
-sum = 0
+num = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기
+sum = 0 # 구매한 물건의 가격 계산한 값을 저장할 변수 선언 및 초기화
 
-for i in range(num):
-    price, count = map(int, sys.stdin.readline().rstrip().split())
-    sum += price * count
+for i in range(num): # 0부터 num이 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
+    price, count = map(int, sys.stdin.readline().rstrip().split()) # 사용자로부터 두 개의 정수 입력받기
+    sum += price * count # sum에 sum + price * count의 값 대입하기
     
-if(totalPrice == sum):
+if(totalPrice == sum): 
     print("Yes")
 else:
     print("No")
