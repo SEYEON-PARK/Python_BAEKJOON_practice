@@ -13,9 +13,9 @@
 구매한 물건의 가격과 개수로 계산한 총 금액이 영수증에 적힌 총 금액과 일치하면 Yes를 출력한다. 일치하지 않는다면 No를 출력한다.
 '''
 
-import sys
+import sys # 표준 입출력을 사용하기 위해
 
-totalPrice = int(sys.stdin.readline().rstrip())
+totalPrice = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기
 num = int(sys.stdin.readline().rstrip())
 sum = 0
 
