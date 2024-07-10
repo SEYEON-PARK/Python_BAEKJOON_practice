@@ -10,3 +10,18 @@ A, B, C를 각각 수와 문자열로 생각했을 때 A+B-C를 출력하세요.
 첫 줄에는 A, B, C를 수로 생각했을 때, A+B-C를 출력하세요.
 둘째 줄에는 A, B, C를 문자열로 생각했을 때, A+B-C를 출력하세요.
 '''
+
+A = int(input())
+B = int(input())
+C = int(input())
+
+print(A+B-C)
+
+if B<10:
+    print(A*10+B-C)
+elif B<100:
+    print(A*100+B-C)
+elif B<1000:
+    print(A*1000+B-C)
+else:
+    print(A*10000+B-C)
