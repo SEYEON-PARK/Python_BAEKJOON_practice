@@ -12,16 +12,16 @@ A, B, C를 각각 수와 문자열로 생각했을 때 A+B-C를 출력하세요.
 '''
 
 A = int(input()) # 사용자로부터 정수 입력받기
-B = int(input())
-C = int(input())
+B = int(input()) # 사용자로부터 정수 입력받기
+C = int(input()) # 사용자로부터 정수 입력받기
 
-print(A+B-C)
+print(A+B-C) # 결과 출력하기
 
-if B<10:
-    print(A*10+B-C)
-elif B<100:
-    print(A*100+B-C)
-elif B<1000:
-    print(A*1000+B-C)
-else:
-    print(A*10000+B-C)
+if B<10: # 만약, B가 10보다 작다면
+    print(A*10+B-C) # 문자열로 생각했을 때 결과 출력하기
+elif B<100: # 만약, 10 <= B <100이라면
+    print(A*100+B-C) # 문자열로 생각했을 때 결과 출력하기
+elif B<1000: # 만약, 100 <= B <1000이라면
+    print(A*1000+B-C) # 문자열로 생각했을 때 결과 출력하기
+else: # 만약, 1000 <= B이라면
+    print(A*10000+B-C) # 문자열로 생각했을 때 결과 출력하기
