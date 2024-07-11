@@ -11,7 +11,7 @@ A, B, C를 각각 수와 문자열로 생각했을 때 A+B-C를 출력하세요.
 둘째 줄에는 A, B, C를 문자열로 생각했을 때, A+B-C를 출력하세요.
 '''
 
-A = int(input())
+A = int(input()) # 사용자로부터 정수 입력받기
 B = int(input())
 C = int(input())
 
