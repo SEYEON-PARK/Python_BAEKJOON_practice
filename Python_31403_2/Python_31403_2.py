@@ -11,19 +11,19 @@ A, B, C를 각각 수와 문자열로 생각했을 때 A+B-C를 출력하세요.
 둘째 줄에는 A, B, C를 문자열로 생각했을 때, A+B-C를 출력하세요.
 '''
 
-import sys
+import sys # 표준 입출력을 사용하기 위해
 
-A = int(sys.stdin.readline().rstrip())
-B = int(sys.stdin.readline().rstrip())
-C = int(sys.stdin.readline().rstrip())
+A = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기
+B = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기
+C = int(sys.stdin.readline().rstrip()) # 사용자로부터 정수 입력받기
 
-sys.stdout.write(f"{A+B-C}\n")
+sys.stdout.write(f"{A+B-C}\n") # A, B, C를 수로 생각했을 때 결과 출력하기 
 
-if B<10:
-    sys.stdout.write(f"{A*10+B-C}\n")
-elif B<100:
-    sys.stdout.write(f"{A*100+B-C}\n")
-elif B<1000:
-    sys.stdout.write(f"{A*1000+B-C}\n")
-else:
-    sys.stdout.write(f"{A*10000+B-C}\n")
+if B<10: # 만약, B가 10보다 작다면
+    sys.stdout.write(f"{A*10+B-C}\n") # 문자열로 생각했을 때 결과 출력하기
+elif B<100: # 만약, 10 <= B <100이라면
+    sys.stdout.write(f"{A*100+B-C}\n") # 문자열로 생각했을 때 결과 출력하기
+elif B<1000: # 만약, 100 <= B <1000이라면
+    sys.stdout.write(f"{A*1000+B-C}\n") # 문자열로 생각했을 때 결과 출력하기
+else: # 만약, 1000 <= B이라면
+    sys.stdout.write(f"{A*10000+B-C}\n") # 문자열로 생각했을 때 결과 출력하기
