@@ -13,23 +13,23 @@ IIHF는 같은 팀이 링크안에 너무 많으면 알람이 울리는 시스�
 첫째 줄에 링크 안에 있는 선수의 수를 출력한다.
 '''
 
-import math
+import math # math.sqrt(), math.pow()를 사용하기 위해
 
-W, H, X, Y, P = map(int, input().split())
-radius = int(H/2)
-count = 0
+W, H, X, Y, P = map(int, input().split()) # 사용자로부터 다섯 개의 정수 입력받기
+radius = int(H/2) # 반지름 저장하기
+count = 0 # 결과를 저장할 변수 선언 및 초기화
 
-for i in range(P):
-    x, y = map(int, input().split())
+for i in range(P): # i에 0부터 P보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
+    x, y = map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
     
-    if((x >= X) and (x <= X+W) and (y >= Y) and (y <= Y+H)):
-        count += 1
-        continue
-    elif(math.sqrt(math.pow(X-x, 2)+math.pow((Y+radius)-y, 2)) <= radius):
-        count += 1
-        continue
-    elif(math.sqrt(math.pow((X+W)-x, 2)+math.pow((Y+radius)-y, 2)) <= radius):
-        count += 1
-        continue
+    if((x >= X) and (x <= X+W) and (y >= Y) and (y <= Y+H)): # 만약, (x, y) 좌표가 두 개의 원 중심 좌표를 참고하여 만든 사각형 안에 속한다면
+        count += 1 # count 1 증가시키기
+        continue # 반복문 계속 반복
+    elif(math.sqrt(math.pow(X-x, 2)+math.pow((Y+radius)-y, 2)) <= radius): # 만약 위의 조건 만족 안 하고, 첫 번째 원의 중심 좌표와 (x, y) 좌표의 거리가 반지름의 길이보다 작거나 같다면
+        count += 1 # count 1 증가시키기
+        continue # 반복문 계속 반복
+    elif(math.sqrt(math.pow((X+W)-x, 2)+math.pow((Y+radius)-y, 2)) <= radius): # 만약 위의 조건들 만족 안 하고, 두 번째 원의 중심 좌표와 (x, y) 좌표의 거리가 반지름의 길이보다 작거나 같다면
+        count += 1 # count 1 증가시키기
+        continue # 반복문 계속 반복
         
-print(count)
+print(count) # 결과 출력하기
