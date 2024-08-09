@@ -11,9 +11,9 @@
 각 테스트 케이스마다 최소나이와 최대나이를 공백으로 나눠 출력한다.
 '''
 
-a, b, c, d = map(int, input().split())
+a, b, c, d = map(int, input().split()) # 사용자로부터 네 개의 정수 입력받기
 
-while(a!=0 or b!=0 or c!=0 or d!=0):
-    print(f"{min(c, d)-max(a, b)} {max(c, d)-min(a, b)}")
+while(a!=0 or b!=0 or c!=0 or d!=0): # 만약, 네 개의 정수 중 하나라도 0이 아니라면 계속 반복
+    print(f"{min(c, d)-max(a, b)} {max(c, d)-min(a, b)}") # 결과 출력하기
     
-    a, b, c, d = map(int, input().split())
+    a, b, c, d = map(int, input().split()) # 사용자로부터 다시 네 개의 정수 입력받기
