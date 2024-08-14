@@ -15,7 +15,7 @@ for i in range(N): # i에 0부터 N보다 작을 때까지 1씩 증가시킨 값
     age, name = map(str, input().split()) # 사용자로부터 두 개의 문자열 입력받기
     li.append([int(age), name]) # 리스트 li에 입력받은 값을 원하는 자료형으로 형변환하여 리스트 형식으로 대입하기
     
-li.sort(key=lambda person : person[0]) # age를 기준으로 오름차순 정렬하기
+li.sort(key=lambda person : person[0]) # person[0] 값을 기준으로 오름차순 정렬하기
 
 for i in range(N): # i에 0부터 N보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
     print(f"{li[i][0]} {li[i][1]}") # 결과 출력하기
