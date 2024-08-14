@@ -8,14 +8,14 @@
 첫째 줄부터 총 N개의 줄에 걸쳐 온라인 저지 회원을 나이 순, 나이가 같으면 가입한 순으로 한 줄에 한 명씩 나이와 이름을 공백으로 구분해 출력한다.
 '''
 
-N = int(input())
-li = list()
+N = int(input()) # 사용자로부터 정수 입력받기
+li = list() # 리스트 li 생성
 
-for i in range(N):
-    age, name = map(str, input().split())
-    li.append([int(age), name])
+for i in range(N): # i에 0부터 N보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
+    age, name = map(str, input().split()) # 사용자로부터 두 개의 문자열 입력받기
+    li.append([int(age), name]) # 리스트 li에 입력받은 값을 원하는 자료형으로 형변환하여 리스트 형식으로 대입하기
     
-li.sort(key=lambda person : person[0])
+li.sort(key=lambda person : person[0]) # age를 기준으로 오름차순 정렬하기
 
-for i in range(N):
-    print(f"{li[i][0]} {li[i][1]}")
+for i in range(N): # i에 0부터 N보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
+    print(f"{li[i][0]} {li[i][1]}") # 결과 출력하기
