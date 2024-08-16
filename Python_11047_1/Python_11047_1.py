@@ -12,7 +12,7 @@ N, K = map(int, input().split()) # 사용자로부터 두 개의 정수 입력�
 coin_type = list() # 동전의 종류를 저장할 리스트 coin_type 선언
 coin_count = 0 # 필요한 동전의 개수를 저장할 변수 coin_count 선언 및 0으로 초기화
 
-for i in range(N): # 동전의 종류만큼 반복하기
+for i in range(N): # 동전 종류 개수만큼 반복하기
     coin = int(input()) # 사용자로부터 정수 입력받기(동전 종류)
     coin_type.append(coin) # coin_type 리스트에 추가하기
     
