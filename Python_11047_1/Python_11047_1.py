@@ -8,18 +8,18 @@
 첫째 줄에 K원을 만드는데 필요한 동전 개수의 최솟값을 출력한다.
 """
 
-N, K = map(int, input().split())
-coin_type = list()
-coin_count = 0
+N, K = map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기(동전 종류 개수, 원하는 금액)
+coin_type = list() # 동전의 종류를 저장할 리스트 coin_type 선언
+coin_count = 0 # 필요한 동전의 개수를 저장할 변수 coin_count 선언 및 0으로 초기화
 
-for i in range(N):
-    coin = int(input())
-    coin_type.append(coin)
+for i in range(N): # 동전의 종류만큼 반복하기
+    coin = int(input()) # 사용자로부터 정수 입력받기(동전 종류)
+    coin_type.append(coin) # coin_type 리스트에 추가하기
     
-coin_type.sort(reverse=True)
+coin_type.sort(reverse=True) # coin_type 리스트를 내림차순으로 정렬하기
 
-for coin in coin_type:
-    coin_count += int(K / coin)
-    K %= coin
+for coin in coin_type: # 리스트 coin_type에 있는 요소들을 하나씩 coin에 넣으며 반복
+    coin_count += int(K / coin) # K(금액)를 coin으로 나눈 몫을 coin_count에 더하기
+    K %= coin # K(금액)를 coin으로 나눈 나머지를 K에 저장하기
     
-print(coin_count)
+print(coin_count) # 결과(필요한 동전의 개수) 출력하기
