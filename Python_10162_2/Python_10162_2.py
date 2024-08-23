@@ -14,15 +14,15 @@
 해당 버튼을 누르지 않는 경우에는 숫자 0을 출력해야한다. 만일 제시된 3개의 버튼으로 T초를 맞출 수 없으면 음수 -1을 첫 줄에 출력해야 한다.
 '''
 
-T = int(input())
-time = [300, 60, 10]
-use_time = []
+T = int(input()) # 요리시간 입력받기
+time = [300, 60, 10] # 각 버튼에 지정된 시간 초 단위로 리스트 time에 저장
+use_time = [] # 각 버튼을 눌러야 하는 횟수 저장할 리스트 use_time 선언
 
-for t in time:
-    use_time.append(T // t)
-    T %= t
+for t in time: # 리스트 time에 있는 요소를 하나씩 t에 대입하며 반복
+    use_time.append(T // t) # 몫 구하기(해당 버튼을 몇 번 눌러야 하는지 구하기)
+    T %= t # 나머지 구하기
 
-if(T==0):
-    print(' '.join(map(str, use_time)))
-else:
-    print(-1)
+if(T==0): # 만약, T가 0이라면(3개의 버튼으로 맞출 수 있으면)
+    print(' '.join(map(str, use_time))) # 결과 출력하기
+else: # T가 0이 아니라면(3개의 버튼으로 맞출 수 없으면)
+    print(-1) # -1 출력하기
