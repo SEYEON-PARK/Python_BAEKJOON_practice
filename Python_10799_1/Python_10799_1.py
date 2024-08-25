@@ -39,6 +39,6 @@ for s in stick: # 괄호 문자열을 하나씩 s에 넣으며 반복
         stack.pop() # stack의 마지막 요소 꺼내기
         count -= 1 # count에 1 빼기
         result += 1 # result에 1 더하기(끊긴 막대기 조각 1 더하기)
-    last = s # last에 s 대입하기(이전 괄호 문자 바꾸기)
+    last = s # last에 s 대입하기(다음 반복을 위해 이전 괄호 문자를 현재 문자로 바꾸기)
 
 print(result) # 결과 출력하기
