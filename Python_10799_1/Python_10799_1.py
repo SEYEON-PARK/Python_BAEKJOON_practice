@@ -19,26 +19,26 @@
 잘려진 조각의 총 개수를 나타내는 정수를 한 줄에 출력한다.
 '''
 
-stick = input()
-stack = list()
+stick = input() # 사용자로부터 괄호 문자열 입력받기
+stack = list() # 스택 역할을 할 리스트 stack 생성
 
-last = ''
-count = 0
-result = 0
+last = '' # 바로 이전 괄호를 저장할 변수
+count = 0 # 현재 쇠막대기 개수를 저장할 변수
+result = 0 # 결과를 저장할 변수
 
 # 닫을 때 pop(), 열 때 push(), 레이저인가 아닌가, 막대기가 언제 끊기는가
-for s in stick:
-    if(s == '('):
-        stack.append(s)
-        count += 1
-    elif(s == ')' and s != last): # 레이저일 때
-        stack.pop()
-        count -= 1
-        result += count
-    else: # 막대기가 닫힐 때
-        stack.pop()
-        count -= 1
-        result += 1
-    last = s
+for s in stick: # 괄호 문자열을 하나씩 s에 넣으며 반복
+    if(s == '('): # 만약, s가 '('와 같다면
+        stack.append(s) # stack에 s 저장하기
+        count += 1 # count에 1 더하기
+    elif(s == ')' and s != last): # 만약 앞의 조건 안 맞고, s가 ')'이고, s가 last와 다르다면(last는 '('임으로, 레이저일 때를 의미함)
+        stack.pop() # stack의 마지막 요소 꺼내기
+        count -= 1 # count에 1 빼기
+        result += count # result에 result + count의 값 대입하기(잘린 막대기 수 더해서 저장)
+    else: # 앞의 조건 다 안 맞으면(막대기가 닫힐 때)
+        stack.pop() # stack의 마지막 요소 꺼내기
+        count -= 1 # count에 1 빼기
+        result += 1 # result에 1 더하기(끊긴 막대기 조각 1 더하기)
+    last = s # last에 s 대입하기(이전 괄호 문자 바꾸기)
 
-print(result)
+print(result) # 결과 출력하기
