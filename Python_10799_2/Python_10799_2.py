@@ -37,4 +37,4 @@ for s in stick: # 괄호 문자열을 하나씩 s에 넣으며 반복
         result += 1 # result에 1 더하기(끊긴 막대기 조각 1 더하기)
     last = s # last에 s 대입하기(다음 반복을 위해 last를 현재 문자로 바꾸기)
 
-print(result) # 결과 출력하기
+print(result) # 결과(잘려진 조각의 총 개수) 출력하기
