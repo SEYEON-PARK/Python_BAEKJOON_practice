@@ -10,13 +10,13 @@ n이 주어졌을 때, n번째 피보나치 수를 구하는 프로그램을 작
 첫째 줄에 n번째 피보나치 수를 출력한다.
 '''
 
-n = int(input())
-pibo = [0, 1]
-count = 1
+n = int(input()) # 사용자로부터 정수 입력받기
+pibo = [0, 1] # 피보나치 수를 저장해둘 리스트 선언 및 초기화
+count = 1 # 몇 번째 피보나치 수인지 저장해둘 변수 count 선언 및 초기화
 
-while(True):
-    if(count == n):
-        print(pibo[-1])
-        break
-    pibo.append(pibo[-1]+pibo[-2])
-    count += 1
+while(True): # 무한 반복
+    if(count == n): # 만약, count가 n과 같다면
+        print(pibo[-1]) # 리스트 pibo의 마지막 요소 출력하기 
+        break # 반복문 빠져나가기
+    pibo.append(pibo[-1]+pibo[-2]) # 리스트 pibo에 다음 요소 추가하기
+    count += 1 # count에 1 더하기
