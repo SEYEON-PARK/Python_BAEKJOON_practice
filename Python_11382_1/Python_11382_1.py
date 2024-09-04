@@ -6,6 +6,6 @@
 A+B+C의 값을 출력한다.
 '''
 
-a, b, c = map(int, input().split())
+a, b, c = map(int, input().split()) # 사용자로부터 세 개의 정수 입력받기
 
-print(a + b + c)
+print(a + b + c) # 결과 출력하기
