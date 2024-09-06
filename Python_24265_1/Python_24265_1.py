@@ -22,4 +22,4 @@ result = 0 # 결과를 저장할 변수 result 선언 및 초기화
 for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복(1부터 반복시켜도 된다.)
     result += i # result에 result + i의 값 대입하기
     
-print(f"{result}\n2") # 결과(수행횟수와 최고차항의 차수) 출력하기
+print(f"{result}\n2") # 결과(코드1의 수행횟수와 최고차항의 차수) 출력하기
