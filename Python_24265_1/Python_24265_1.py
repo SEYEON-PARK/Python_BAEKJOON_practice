@@ -16,10 +16,10 @@ MenOfPassion(A[], n) {
 둘째 줄에 코드1의 수행 횟수를 다항식으로 나타내었을 때, 최고차항의 차수를 출력한다. 단, 다항식으로 나타낼 수 없거나 최고차항의 차수가 3보다 크면 4를 출력한다.
 '''
 
-N = int(input())
-result = 0
+N = int(input()) # 사용자로부터 정수 입력받기
+result = 0 # 결과를 저장할 변수 result 선언 및 초기화
     
-for i in range(N):
-    result += i
+for i in range(N): # i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복(1부터 반복시켜도 된다.)
+    result += i # result에 result + i의 값 대입하기
     
-print(f"{result}\n2")
+print(f"{result}\n2") # 결과(수행횟수와 최고차항의 차수) 출력하기
