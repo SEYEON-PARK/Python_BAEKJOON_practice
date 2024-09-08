@@ -48,7 +48,7 @@ visited = set() # 방문한 정점을 표시할 세트 visited 생성
 future_visit = deque([start_v]) # 앞으로 방문할 정점을 저장할 deque future_visit을 생성하고, 시작 정점을 추가(추가할 때 리스트 형식'[]'가 반드시 있어야 함!) 
 
 while future_visit: # 앞으로 방문할 정점이 남아있다면 계속 반복
-    node = future_visit.popleft()  # 큐처럼 방문할 정점을 앞에서 빼어 node에 저장
+    node = future_visit.popleft() # 큐처럼 방문할 정점을 앞에서 빼어 node에 저장
     
     if node not in visited: # 만약, node가 방문하지 않은 정점이라면
         print(node, end=' ') # 출력하기
