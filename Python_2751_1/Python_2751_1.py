@@ -12,7 +12,7 @@ N = int(sys.stdin.readline()) # 사용자로부터 정수 입력받기
 li = [] # 빈 리스트 li 생성
 
 for _ in range(N): # N번 반복
-    num = int(sys.stdin.readline()) # 사용자로부터 정수 입력받기(반복이 커지면 커질수록 input()은 오래 걸린다. 따라서 반복문 안에서 입력받을 때는 sys.stdin.readline()을 이용하자!)
+    num = int(sys.stdin.readline()) # 사용자로부터 정수 입력받기(반복이 많아지면 많아질수록 input()은 오래 걸린다. 따라서 반복문 안에서 입력받을 때는 sys.stdin.readline()을 이용하자!)
     li.append(num) # 입력받은 정수를 리스트 li에 추가하기
 
 li.sort() # 리스트 li 오름차순 정렬하기
