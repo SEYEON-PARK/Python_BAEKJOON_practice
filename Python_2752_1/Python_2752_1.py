@@ -8,8 +8,8 @@
 제일 작은 수, 그 다음 수, 제일 큰 수를 차례대로 출력한다.
 '''
 
-li = list(map(int, input().split()))
+li = list(map(int, input().split())) # 사용자로부터 세 개의 정수를 입력받아 리스트 li에 저장
 
-li.sort()
+li.sort() # 리스트 li 오름차순 정렬
 
-print(li[0], li[1], li[2])
+print(li[0], li[1], li[2]) # 결과 출력하기
