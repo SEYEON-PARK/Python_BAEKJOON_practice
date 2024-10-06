@@ -35,11 +35,11 @@
 '''
 
 N, K = map(int, input().split()) # 사용자로부터 두 개의 정수(온도를 측정한 전체 날짜의 수, 합을 구하기 위한 연속적인 날짜의 수) 입력받기
-num_list = list(map(int, input().split())) # 사용자로부터 입력받은 문자열을 공백을 기준으로 잘라 정수로 바꾼 뒤, list에 저장하여 num_list에 대입하기
+num_list = list(map(int, input().split())) # 사용자로부터 입력받은 문자열을 공백을 기준으로 잘라 정수로 바꾼 뒤, list로 저장하여 num_list에 대입하기
 after_list = [] # 계산한 값 넣을 리스트 after_list 생성
 
 for i in range(N-K+1): # i에 0부터 N-K+1이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
-    sum = 0 # 다 더한 값을 저장할 변수 sum 생성 및 0으로 초기화
+    sum = 0 # 연속적인 날짜의 수만큼 더한 값을 저장할 변수 sum 선언 및 0으로 초기화
     for j in range(i, i+K): # i부터 i+K가 되기 전까지 1씩 증가시킨 값을 j에 대입하며 반복
         sum += num_list[j] # sum에 sum + num_list[j]의 값 대입하기
     after_list.append(sum) # sum의 값을 after_list에 추가하기
