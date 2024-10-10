@@ -15,15 +15,15 @@ N+2번째 줄부터 M개의 줄에 걸쳐 비밀번호를 찾으려는 사이트
 첫 번째 줄부터 M개의 줄에 걸쳐 비밀번호를 찾으려는 사이트 주소의 비밀번호를 차례대로 각 줄에 하나씩 출력한다.
 '''
 
-import sys
+import sys # sys.stdin.readline()을 사용하기 위해
 
-N, M = map(int, sys.stdin.readline().split())
-add_dict = dict()
+N, M = map(int, sys.stdin.readline().split()) # 사용자로부터 두 개의 정수 입력받기
+add_dict = dict() # 사이트 주소와 비밀번호를 매칭하여 저장할 딕셔너리 add_dict 생성
 
-for i in range(N):
-    add, pw = sys.stdin.readline().split()
-    add_dict[add] = pw
+for i in range(N): # N번 반복
+    add, pw = sys.stdin.readline().split() # 사용자로부터 사이트 주소와 비밀번호 입력받기
+    add_dict[add] = pw # 딕셔너리 add_dict에 사이트 주소를 키값으로 하고, 비밀번호를 벨류로 하여 추가하기
     
-for i in range(M):
-    add = sys.stdin.readline().strip()
-    print(add_dict[add])
+for i in range(M): # M번 반복
+    add = sys.stdin.readline().strip() # 사용자로부터 사이트 주소 입력받기(strip()을 하여 줄바꿈 문자 없애는 거 필수!)
+    print(add_dict[add]) # 해당 사이트의 비밀번호 출력하기
