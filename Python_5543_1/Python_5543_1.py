@@ -9,13 +9,13 @@
 첫째 줄에 가장 싼 세트 메뉴의 가격을 출력한다.
 '''
 
-hamburgers = list()
-beverage = list()
+hamburgers = list() # 햄버거 가격을 담을 리스트 생성
+beverage = list() # 음료 가격을 담을 리스트 생성
 
-for _ in range(3):
-    hamburgers.append(int(input()))
+for _ in range(3): # 3번 반복
+    hamburgers.append(int(input())) # 사용자로부터 정수 입력받아 햄버거 가격 리스트에 추가하기
 
-for _ in range(2):
-    beverage.append(int(input()))
+for _ in range(2): # 2번 반복
+    beverage.append(int(input())) # 사용자로부터 정수 입력받아 음료 가격 리스트에 추가하기
 
-print(min(hamburgers)+min(beverage)-50)
+print(min(hamburgers)+min(beverage)-50) # 결과 출력하기
