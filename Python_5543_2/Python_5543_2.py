@@ -9,17 +9,17 @@
 첫째 줄에 가장 싼 세트 메뉴의 가격을 출력한다.
 '''
 
-min_hamburger = 2000
-min_beverage = 2000
+min_hamburger = 2000 # 가장 싼 햄버거의 가격을 저장할 변수 min_hamburger 선언 및 최댓값 대입해두기
+min_beverage = 2000 # 가장 싼 음료의 가격을 저장할 변수 min_beverage 선언 및 최댓값 대입해두기
 
-for _ in range(3):
-    hamburger = int(input())
-    if(hamburger < min_hamburger):
-        min_hamburger = hamburger
+for _ in range(3): # 3번 반복
+    hamburger = int(input()) # 사용자로부터 정수(햄버거 가격) 입력받기
+    if(hamburger < min_hamburger): # 만약, hamburger(입력받은 정수)가 min_hamburger보다 작다면
+        min_hamburger = hamburger # min_hamburger에 hamburger의 값 대입하기
 
-for _ in range(2):
-    beverage = int(input())
-    if(beverage < min_beverage):
-        min_beverage = beverage
+for _ in range(2): # 2번 반복
+    beverage = int(input()) # 사용자로부터 정수(음료 가격) 입력받기
+    if(beverage < min_beverage): # 만약, beverage(입력받은 정수)가 min_beverage보다 작다면
+        min_beverage = beverage # min_beverage에 beverage의 값 대입하기
 
-print(min_hamburger + min_beverage - 50)
+print(min_hamburger + min_beverage - 50) # 결과(가장 싼 세트 메뉴의 가격) 출력하기
