@@ -8,8 +8,8 @@
 각 V와 E에 대해 볼록다면체의 면의 수를 한 줄에 하나씩 출력한다.
 '''
 
-N = int(input())
+N = int(input()) # 사용자로부터 정수 입력받기
 
-for i in range(N):
-    V, E = map(int, input().split())
-    print(E-V+2)
+for i in range(N): # N번 반복
+    V, E = map(int, input().split()) # 사용자로부터 두 개의 정수 입력받기
+    print(E-V+2) # 결과 출력하기
