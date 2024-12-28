@@ -6,7 +6,7 @@ N개의 정수가 주어지면, 이 정수들의 합 S의 부호를 구하는 �
 총 3개의 줄에 걸쳐 각 테스트 셋에 대해 N개의 정수들의 합 S의 부호를 출력한다. S=0이면 "0"을, S>0이면 "+"를, S<0이면 "-"를 출력하면 된다.
 '''
 
-import sys
+import sys # sys.stdin.readline()을 사용하기 위해
 
 for _ in range(3):
     N = int(sys.stdin.readline())
