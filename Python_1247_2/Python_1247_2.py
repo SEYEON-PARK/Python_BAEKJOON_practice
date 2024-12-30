@@ -8,14 +8,14 @@ N개의 정수가 주어지면, 이 정수들의 합 S의 부호를 구하는 �
 
 import sys # sys.stdin.readline()을 사용하기 위해
 
-for _ in range(3):
-    N = int(sys.stdin.readline())
-    sum = 0
-    for i in range(N):
-        sum += int(input())
-    if sum > 0:
-        print('+')
-    elif sum < 0:
-        print('-')
-    else:
-        print('0')
+for _ in range(3): # 3번 반복
+    N = int(sys.stdin.readline()) # 사용자로부터 정수 입력받기
+    sum = 0 # 합을 저장할 변수 선언 및 0으로 초기화
+    for i in range(N): # N번 반복
+        sum += int(input()) # sum에 (sum + 사용자로부터 입력받은 정수) 저장
+    if sum > 0: # 만약, sum이 0보다 크다면
+        print('+') # '+' 출력하기
+    elif sum < 0: # 만약, sum이 0보터 크지 않고 작다면
+        print('-') # '-' 출력하기
+    else: # sum이 0보다 크지도 않고 작지도 않다면(같다면)
+        print('0') # '0' 출력하기
