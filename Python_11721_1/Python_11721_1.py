@@ -7,12 +7,12 @@
 입력으로 주어진 단어를 열 개씩 끊어서 한 줄에 하나씩 출력한다. 단어의 길이가 10의 배수가 아닌 경우에는 마지막 줄에는 10개 미만의 글자만 출력할 수도 있다.
 '''
 
-s = input()
-count = 0
+s = input() # 사용자로부터 문자열 입력받기
+count = 0 # 카운트할 변수 선언 및 0으로 초기화
 
-for i in s :
-    print(i, end="")
-    count += 1
-    if(count == 10):
-        print()
-        count = 0
+for i in s : # 문자열 s의 문자들을 하나씩 i에 대입하며 반복
+    print(i, end="") # i 출력하기
+    count += 1 # count(카운트) 1 증가시키기
+    if(count == 10): # 만약, count(카운트)가 10과 같다면
+        print() # 한 줄 띄기
+        count = 0 # count(카운트)에 0 대입하기
