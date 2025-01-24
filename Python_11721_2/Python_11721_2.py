@@ -12,9 +12,9 @@ import sys # sys.stdin.readline()을 사용하기 위해
 s = sys.stdin.readline() # 사용자로부터 문자열 입력받기
 count = 0 # 카운트할 변수 count 선언 및 0으로 초기화
 
-for i in s :
-    print(i, end="")
-    count += 1
-    if(count == 10):
-        print()
-        count = 0
+for i in s : # 문자열 s의 문자들을 하나씩 i에 대입하며 반복
+    print(i, end="") # 문자 i 출력하기
+    count += 1 # count에 1 더하기
+    if(count == 10): # 만약, count가 10과 같다면
+        print() # 한 줄 띄기
+        count = 0 # count에 0 대입하기
